@@ -2,7 +2,7 @@
 
 body{
     margin: auto;
-    width: 600px;
+    width: 550px;
 }
 
 .bodyimage {
@@ -47,24 +47,24 @@ nav {
 nav ul {
     list-style-type: none;
     padding-left: 0;
-    background-color: #3f4743;
+    background-color: #dfd9e2;
     text-align: center;
 }
 
 nav ul li {
     padding: 10px;
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    color: #dfd9e2;
+    color: #3f4743;
     font-size: 1.6em;
 }
 
 nav ul li a {
-    color: #dfd9e2;
+    color: #3f4743;
     text-decoration: none;
 }
 
 .current {
-   background-color: #55615b;
+   background-color: #b0acb3;
 }
 
 

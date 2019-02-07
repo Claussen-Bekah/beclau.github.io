@@ -1,11 +1,10 @@
 @media only screen and (min-width: 768px) {
+
     body{
-        margin: auto;
         width: 75%;
     }
 
     ul {
-        list-style-type: none;
         margin: 0;
         padding: 1em;
     }
@@ -29,15 +28,8 @@
 
     .forecast {
         display: block;
-        width: 100%;
-        text-align: center;
-        margin: 1em auto;
     }
 
-    .summary {
-        top: 10%;
-        right: 50%;
-    }
 
     .snippetimage {
         width: 100%;

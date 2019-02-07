@@ -39,6 +39,7 @@ header {
     font-size: 1em;
     color: #dfd9e2;
     font-style: oblique;
+    padding-bottom: 10px;
 
 }
 
@@ -121,7 +122,7 @@ h5 {
 .summary {
     position: absolute;
 	top: 1.2em;
-	right: 10em;
+	left: 1.2em;
 	background-color: #ffffff;
     border: 2px solid #456990;
     padding: 1.5rem;
@@ -206,13 +207,17 @@ table, th, td {
 }
 
 .terms {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: #dfd9e2;
-    margin-top: .7em;
-    padding-top: .7em;
-    padding-bottom: .7em;
-    padding-left: 2em;
 }
+
+.social-media img {
+    width: 40px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
 
 

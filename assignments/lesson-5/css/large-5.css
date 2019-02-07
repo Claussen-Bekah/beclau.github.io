@@ -1,0 +1,75 @@
+@media only screen and (min-width: 768px) {
+    body{
+        margin: auto;
+        width: 850px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 1em;
+    }
+
+
+   .current {
+       background-color: none;
+
+   }
+
+
+    nav ul li {
+        padding: .62em;
+        display: inline;
+        
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .forecast {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 1em auto;
+    }
+
+    .summary {
+        top: 10%;
+        right: 50%;
+    }
+
+    .snippetimage {
+        width: 100%;
+    }
+
+    .preview {
+        margin-bottom: 3em;
+    }
+
+
+    .input {
+        float: none;
+    }
+
+    
+    .previewimg {
+        width: 30%;
+        float: right;
+        overflow: auto;
+        margin-bottom: 30px;
+    }
+    
+    .contact {
+        overflow: none;
+    }
+
+    .map {
+        width: 50%;
+        float: right;
+    }
+
+   
+
+}
+

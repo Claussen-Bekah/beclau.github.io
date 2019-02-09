@@ -1,8 +1,9 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 64rem) {
 
     body{
-        width: 75%;
+        width: 85%;
     }
+
 
     ul {
         margin: 0;
@@ -12,14 +13,25 @@
 
    .current {
        background-color: none;
-
    }
-
 
     nav ul li {
         padding: .62em;
         display: inline;
         
+    }
+
+    nav ul li a {
+        display: inline;
+        font-size: 1.2em;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
     }
 
     .menu {

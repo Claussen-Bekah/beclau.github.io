@@ -13,7 +13,6 @@
 
 <link rel="stylesheet" href="css/large-6.css">
 
-<script src="js/scripts.js"></script>
 
 </head>
 
@@ -29,7 +28,6 @@
 </header>
 
 <nav>
-    <!--<a href="#" class="menu">Menu</a>-->
     <button class="menu" onclick="toggleMenu()">&#9776; Menu</button>
 
     <ul id="primaryNav" class="hide">
@@ -49,7 +47,9 @@
       <div class="snippet">
         
         <figure class="snippetimg">
-        <img src="images/snow.jpg" alt="snow on trees">
+        <img src="images/hero.jpg" alt="snow on trees" sizes="97vw"
+        srcset="images/hero800.jpg 800w,
+                images/hero.jpg 1160w">
         </figure>
 
         <section class="summary">
@@ -154,11 +154,14 @@
 
     <div class="copyright">&copy; 2019 Gem State Weather | <a href="#" target="_blank">Terms of Use</a> | Bekah Claussen</div>
 
-    <span id="currentdate">Thursday, February 7, 2019</span>
+    <span id="currentDate"></span>
 
     </div>
 
 </footer>
+
+<script src="js/hamburger.js"></script>
+<script src="js/currentdate.js"></script>
 
 </body>
 </html>

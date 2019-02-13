@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 50rem) {
 
     body{
         width: 85%;
@@ -18,7 +18,8 @@
 
     nav ul li a {
         display: inline;
-        font-size: 1.2em;
+        font-size: 1.1em;
+        padding: .1em;
     }
 
     nav button {

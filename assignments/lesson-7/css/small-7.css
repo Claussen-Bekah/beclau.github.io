@@ -9,7 +9,6 @@ body{
 /*Header*/
 
 .logo, .site-name, .heading {
-    display: inline-block;
     vertical-align: middle;	
 }
 

@@ -79,6 +79,11 @@
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
+
+    .gallery figure:hover {
+        box-shadow: 0 0 30px #3f4743;
+    }
+
+
 }
 

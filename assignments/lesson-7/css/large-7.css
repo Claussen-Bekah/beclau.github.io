@@ -1,0 +1,84 @@
+@media only screen and (min-width: 992px) {
+
+    body{
+        width: 85%;
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+
+    ul {
+        margin: 0;
+        padding: 1em;
+    }
+
+    nav ul li {
+        padding: .62em;
+        display: inline;
+        
+    }
+
+    nav ul li a {
+        display: inline;
+        font-size: 1.1em;
+        padding: .1em;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .forecast {
+        display: block;
+    }
+
+
+    .snippetimage {
+        width: 100%;
+    }
+
+    .preview {
+        margin-bottom: 3em;
+    }
+
+    .input {
+        float: none;
+    }
+    
+    article figure.previewimg {
+        width: 40%;
+        float: right;
+        padding-left: 10px;
+    }
+    
+    .contact {
+        position: relative;
+    }
+   
+    footer figure.map {
+        width: 30%;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+    }
+    
+
+    /*Gallery*/
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+

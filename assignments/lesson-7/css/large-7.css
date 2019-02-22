@@ -73,6 +73,10 @@
         top: 1em;
     }
     
+    .summary {
+        top: 2em;
+        left: 4em;
+    }
 
     /*Gallery*/
 

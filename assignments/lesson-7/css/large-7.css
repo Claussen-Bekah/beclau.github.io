@@ -9,22 +9,22 @@
         margin: auto;
     }
 
+    .navflex {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
     ul {
         margin: 0;
-        padding: 1em;
     }
 
     nav ul li {
         padding: .62em;
-        display: inline;
-        
     }
 
     nav ul li a {
-        display: inline;
         font-size: 1.1em;
-        padding: .1em;
     }
 
     nav button {
@@ -32,7 +32,7 @@
     }
 
     nav ul.hide {
-        display: block;
+        display: flex;
     }
 
     .menu {

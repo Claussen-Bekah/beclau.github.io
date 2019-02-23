@@ -40,7 +40,8 @@ header {
 
 .navflex {
     display: flex;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    width: 100%;
 }
 
 nav button {

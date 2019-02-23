@@ -10,7 +10,7 @@
     }
 
     .navflex {
-        flex-direction: row;
+        flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
     }
@@ -33,6 +33,11 @@
 
     nav ul.hide {
         display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
     }
 
     .menu {

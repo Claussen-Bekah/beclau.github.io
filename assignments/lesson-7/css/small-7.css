@@ -8,14 +8,11 @@ body{
 
 /*Header*/
 
-.logo, .site-name, .heading {
-    vertical-align: middle;	
-}
-
 header {
     background-color: #456990;
     text-align: center;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-content: center;
 }
@@ -131,7 +128,7 @@ h5 {
 /*Weather summary/Wind Chill calculator*/
 
 .snippet {
-    margin-bottom: 1em;
+    display: grid;
     position: relative;
 }
 
@@ -148,42 +145,50 @@ main figure.snippetimg img {
 
 .summary {
     position: absolute;
-	top: 1em;
-	left: 1.5em;
-	background-color: #ffffff;
-    border: 2px solid #456990;
-    padding-top: 1em;
-    padding-left: 1em;
-    padding-right: 1em;
+    background-color: white;
+    top: 1em;
+    left: 1.5em;
+    padding: 1em;
     display: flex;
-    flex-flow: column wrap;
+    align-content: center;
     justify-content: center;
-    align-items: center;
-}
-
-#temperature, #speed {
-    margin-bottom: 15px;
+    width: 220px;
 }
 
 #windchill {
     background-color: #456990;
     border: 1px solid #3f4743;
-    border-radius: 4px;
+    border-radius: 5px;
     color: #ffffff;
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    padding: .5em;
-    font-size: 1em;
-}
-
-#windOutput {
-    padding: 1em;
-    color: #3f4743;
-    font-size: 1em;
+    padding: .4em;
+    font-size: .6em;
+    margin-right: .5em;
 }
 
 .summary h3 {
-    font-size: 1em;
+    font-size: 1.2em;
+    padding-right: .4em;
+    background-color: #dfd9e2;
+    padding: .2em;
+    display: none;
 }
+
+.summary p {
+    font-size: .6em;
+}
+
+#windOutput {
+    color: #3f4743;
+    font-size: .6em;
+    margin: 1em;
+    
+}
+
+
+
+
+
 
 
 /*5 day forecast*/

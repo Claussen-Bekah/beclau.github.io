@@ -11,22 +11,37 @@
     
     #windchill {
         padding: .5em;
-        font-size: 1.3em;
+        font-size: 1em;
+        width: 40%;
     }
     
     #windOutput {
-        padding: 1em;
+        margin: .4em;
         color: #3f4743;
-        font-size: 1.3em;
+        font-size: 1em;
     }
     
     .summary {
         top: 2em;
         left: 2.5em;
+        width: 200px;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-content: center;
+
     }
 
     .summary h3 {
-        font-size: 1.5em;
+        display: flex;
+        margin: 0;
     }
 
+
+    .summary p {
+    font-size: .8em;
+    }
+
+    #hidden {
+        display: none;
+    }
 }

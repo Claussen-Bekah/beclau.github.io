@@ -60,7 +60,7 @@
 
            <label class="userInput">Date of Storm<input type="date" name="stormDate"></label>
 
-           <label class="userInput" for="storm-choice">Storm Type</label><input list="storm-types" name="stormType" name="storm-choice">
+           <label class="userInput" for="storm-choice">Storm Type</label><input list="storm-types" name="stormType" id="storm-choice">
                 <datalist id="storm-types">
                     <option value="Flash Flood">
                     <option value="Hail">
@@ -84,8 +84,7 @@
             <span class="moreSpace"><input type="radio" name="danger-level" id="no" value="no"><label for="no">No</label></span>
             <span class="moreSpace"><input type="radio" name="danger-level" id="maybe" value="maybe"><label for="maybe">Maybe</label></span>
 
-            <label class="userInput">Additional Comments</label><input type="textarea" name="comments" class="comments">
-
+            <label class="userInput">Additional Comments</label><textarea name="comments" class="comments"></textarea>
             <button class="formButton" type="submit" name="submit">Share Storm Info</button>
         </fieldset>
 

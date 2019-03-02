@@ -320,6 +320,7 @@ form label.userInput input, form button {
 }
 
 form button {
+    border: none;
     border-radius: 10px;
     padding: 1em;
     width: 90%;

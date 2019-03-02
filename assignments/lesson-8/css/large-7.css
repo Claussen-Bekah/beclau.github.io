@@ -1,17 +1,14 @@
 @media only screen and (min-width: 992px) {
 
     body{
-        width: 100%;
+        width: 85%;
     }
 
     main {
-        width: 85%;
-        margin: auto;
-    }
-    footer {
         width: 90%;
         margin: auto;
     }
+
     .navflex {
         flex-flow: row nowrap;
         justify-content: center;
@@ -50,13 +47,17 @@
     .forecast {
         display: block;
     }
+
+
    
 
     .preview {
         margin-bottom: 3em;
     }
 
-    
+    .input {
+        float: none;
+    }
     
     article figure.previewimg {
         width: 40%;
@@ -70,6 +71,9 @@
    
     footer figure.map {
         width: 30%;
+        position: absolute;
+        right: 1em;
+        top: 1em;
     }
     
     

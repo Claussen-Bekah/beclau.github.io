@@ -46,7 +46,7 @@
 <main>
    <h2>Preston, Idaho</h2>
    
-      <div class="snippet">
+    <div class="snippet">
         
         <figure class="snippetimg">
         <img src="images/hero.jpg" alt="sun shining on mountains" sizes="100vw"
@@ -56,11 +56,14 @@
 
         <section class="summary">
 
-        <h3>Wind Chill Calculator</h3>
-        <p>Temp: <input type="text" id="temperature" size="3"></p>
-            <p>Wind Speed: <input type="text" id="speed" size="3"></p>
-            <button id="windchill" type="button" onclick="calcChill()">Calculate <span id="hidden"> Wind Chill</span></button>
-           <span id="windOutput"></span>
+        <h3>Weather Summary</h3>
+        <ul class="summary-list">
+            <li>Currently: <span class="output">Cloudy</span></li>
+            <li>Temperature: <span class="output">30&deg; F</span></li>
+            <li>Wind Chill: <span id="windOutput" class="output"></span></li>
+            <li>Humidity: <span class="output">30%</span></li>
+            <li>Wind Speed: <span class="output">10 mph</span></li>
+        </ul>
 
         </section>
     </div>
@@ -132,27 +135,33 @@
 
 <footer>
 
-    <div class="contact">
+   <div class="contact">
 
+        <div class="contact-info">
+        
         <h5>
             Contact Information
         </h5>
+        
+        <p class="type">Phone: <span class="input">(208) 555-5555</span></p>
+        <p class="type">Email: <span class="input">gemstateweather@email.com</span></p>
+        <p class="type">Address: <span class="input">123 Main St Preston, ID 83263</span></p>
+                
+        
+        <div class="social-media">
+            <img src="images/facebook.png" alt="facebook logo">
+            <img src="images/insta.png" alt="instagram logo">
+            <img src="images/youtube.png" alt="youtube logo">
+        </div>
 
-            <p class="type">Phone: <span class="input">(208) 555-5555</span></p>
-            <p class="type">Email: <span class="input">gemstateweather@email.com</span></p>
-            <p class="type">Address: <span class="input">123 Main St Preston, ID 83263</span></p>
-
-            <div class="social-media">
-                <img src="images/facebook.png" alt="facebook logo">
-                <img src="images/insta.png" alt="instagram logo">
-                <img src="images/youtube.png" alt="youtube logo">
-            </div>
-
-            <figure class="map">
+        </div>
+        
+        <figure class="map">                
             <img src="images/map.png" alt="map snippet">
-            </figure>
-
+        </figure>
+        
     </div>
+
     
 
     <div class="terms">

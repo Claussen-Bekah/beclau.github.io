@@ -8,40 +8,33 @@
         width: 90%;
         margin: auto;
     }
-    
-    #windchill {
-        padding: .5em;
-        font-size: 1em;
-        width: 40%;
-    }
-    
-    #windOutput {
-        margin: .4em;
-        color: #3f4743;
-        font-size: 1em;
-    }
-    
+
     .summary {
-        top: 2em;
-        left: 2.5em;
-        width: 200px;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-content: center;
-
+        position: absolute;
+        background-color: white;
+        top: 1em;
+        left: 3em;
+        padding: 1em;
     }
-
+    
     .summary h3 {
+        font-size: 1.8em;
+    }
+
+    .summary ul li {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .contact {
         display: flex;
-        margin: 0;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 20px;
     }
 
-
-    .summary p {
-    font-size: .8em;
+    .social-media {
+        align-self: flex-end;
     }
-
-    #hidden {
-        display: none;
+        
     }
-}

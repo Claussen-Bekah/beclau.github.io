@@ -1,14 +1,17 @@
 @media only screen and (min-width: 992px) {
 
     body{
-        width: 85%;
+        width: 100%;
     }
 
     main {
+        width: 85%;
+        margin: auto;
+    }
+    footer {
         width: 90%;
         margin: auto;
     }
-
     .navflex {
         flex-flow: row nowrap;
         justify-content: center;
@@ -47,16 +50,9 @@
     .forecast {
         display: block;
     }
-
-
    
-
     .preview {
         margin-bottom: 3em;
-    }
-
-    .input {
-        float: none;
     }
     
     article figure.previewimg {
@@ -71,10 +67,8 @@
    
     footer figure.map {
         width: 30%;
-        position: absolute;
-        right: 1em;
-        top: 1em;
     }
+    
     
     
 
@@ -88,6 +82,34 @@
         box-shadow: 0 0 30px #3f4743;
     }
 
+    /*------Storm Center------*/
 
+    form {
+        width: 30%;
+    }
+
+    form input:focus {
+        box-shadow: 0 0 5px #456990;
+        border: 1px solid #456990;
+    }       
+    
+    form input:hover {
+        border: 1px solid orange;
+    }
+
+    form button:hover {
+        background-color: #3f4743;
+        color: white;
+    }
+    
+    form button {
+        width: 200px;
+    }
+
+    #stormRating {
+        width: 30%;
+    }
+
+    
 }
 

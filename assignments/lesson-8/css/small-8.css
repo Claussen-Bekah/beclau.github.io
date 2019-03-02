@@ -94,7 +94,7 @@ nav a:hover {
 
 /*General font*/
 
-p, figcaption {
+p, figcaption, legend, label {
     font-family: "Libre Baskerville", Georgia, 'Times New Roman', Times, serif;
     font-size: .8em;
 }
@@ -125,7 +125,7 @@ h5 {
     font-size: 1.2em;
 }
 
-/*Weather summary/Wind Chill calculator*/
+/*Weather summary/Wind Chill*/
 
 .snippet {
     display: grid;
@@ -141,54 +141,39 @@ main figure.snippetimg img {
     width: 100%;
 }
 
-/*Wind chill calculator box*/
+/*Summary box*/
 
 .summary {
     position: absolute;
-    background-color: white;
-    top: 1em;
-    left: 1.5em;
-    padding: 1em;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 220px;
-}
-
-#windchill {
-    background-color: #456990;
-    border: 1px solid #3f4743;
-    border-radius: 5px;
-    color: #ffffff;
-    font-family: Nunito, Arial, Helvetica, sans-serif;
-    padding: .4em;
-    font-size: .6em;
-    margin-right: .5em;
+    background: rgba(255,255,255,0.7);
+    top: .5em;
+    left: 1em;
+    padding: 0;
 }
 
 .summary h3 {
-    font-size: 1.2em;
-    padding-right: .4em;
-    background-color: #dfd9e2;
-    padding: .2em;
-    display: none;
+    text-decoration: underline;
+    font-size: 1em;
+    margin: 0;
+    padding: 5px;
 }
 
-.summary p {
-    font-size: .6em;
+.summary-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-#windOutput {
-    color: #3f4743;
-    font-size: .6em;
-    margin: 1em;
-    
+.summary-list li {
+    padding-bottom: 5px;
+    font-size: .8em;
+    padding-left: 5px;
 }
 
-
-
-
-
+.output {
+    color: #456990;
+    font-weight: bold;
+}
 
 
 /*5 day forecast*/
@@ -279,19 +264,93 @@ article figure.previewimg img {
     padding: 10px 0;
 }
 
+/*Storm Center Page*/
+
+
+form fieldset {
+    margin: 1em;
+    padding: 1em 0 1em 1em;
+}
+
+form legend {
+    color: #456990;
+    font-size: 1.3em;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    border-left: 1px solid #3f4743;
+    border-right: 1px solid #3f4743;
+    border-top: 1px solid #3f4743;
+    padding: 10px 10px 0 10px;
+}
+
+form input, form button {
+    margin: .4em;
+}
+
+form input {
+    padding: .65em;
+}
+
+#stormRating {
+    margin: 0;
+    padding: 0;
+}
+
+form label.userInput {
+    display: block;
+    padding-top: 2em;
+}
+
+form label.userInput input, form button {
+    display: block;
+}
+
+.comments {
+    height: 50px;
+    width: 55%;
+}
+
+.highSpace {
+    padding-bottom: 5px;
+}
+
+.moreSpace {
+    padding: 5px 5px 5px 0;
+    margin: 0;
+    display: block;
+}
+
+form button {
+    border-radius: 10px;
+    padding: 1em;
+    width: 90%;
+    font-size: 1.2em;
+    font-family: "Patua One", "Big Caslon", Cambria, serif;
+    color: #456990;
+    background-color: #dfd9e2;
+    margin: 1.5em 0 0 0;
+}
+
+
+
+#stormRating {
+    width: 80%;
+}
+
+/*Thanks*/
+
+#thanks {
+    text-align: center;
+}
 
 
 /*Footer contact info*/
-
+ 
 .contact {
-    margin-top: .7em;
-    padding-left: 2em;
-    padding-top: .7em;
-    padding-bottom: .7em;
     background-color: #3f4743;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
     
 }
 
@@ -299,11 +358,6 @@ article figure.previewimg img {
     color: #dfd9e2;
 }
 
-
-.input {
-    float: right;
-    padding-right: 4em;
-}
 
 .social-media img {
     width: 40px;
@@ -315,7 +369,6 @@ article figure.previewimg img {
 
 footer figure.map {
     width: 70%;
-    margin: auto;
 }
 
 footer figure.map img {

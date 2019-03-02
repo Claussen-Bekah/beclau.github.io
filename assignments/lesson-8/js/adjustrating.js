@@ -1,3 +1,3 @@
-function adjustRating(rating) {
-    document.getElementById("ratingvalue").innerHTML = rating;
+function changeSlider(number) {
+    document.getElementById("rangeValue").innerHTML = number;
 }

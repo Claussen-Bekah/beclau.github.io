@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Preston | Gem State Weather | Current Weather Conditions and Events</title>
+    <meta name="description" content="Preston Idaho current weather conditions, upcoming events and contact info">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/small-8.css">
+
+    <link rel="stylesheet" href="css/large-8.css">
+
+    <link rel="stylesheet" href="css/medium-8.css">
+</head>
+
+<body>
+<header>
+    <img src="images/logo.png" class="logo" alt="cloud and sun">
+    
+    <div class="heading">
+        <h1 class="site-name">GEM STATE WEATHER</h1>
+
+    <div class="motto">No matter the weather, we'll be here to let you know</div>
+    </div>
+</header>
+
+<nav>
+    <button class="menu" onclick="toggleMenu()">&#9776; Menu</button>
+
+    <div class="navflex">
+    <ul id="primaryNav" class="hide">
+        
+        <li><a href="#">Home</a></li>
+        <li><a href="preston-8.html" class="current">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="../lesson-7/gallery-7.html">Gallery</a></li>
+    </ul>
+    </div>
+</nav>
+
+<main>
+   <h2>Preston, Idaho</h2>
+   
+    <div class="snippet">
+        
+        <figure class="snippetimg">
+        <img src="images/hero.jpg" alt="sun shining on mountains" sizes="100vw"
+        srcset="images/hero800.jpg 800w,
+                images/hero.jpg 1160w">
+        </figure>
+
+        <section class="summary">
+
+        <h3>Weather Summary</h3>
+        <ul class="summary-list">
+            <li>Currently: <span class="output">Cloudy</span></li>
+            <li>Temperature: <span class="output">30&deg; F</span></li>
+            <li>Wind Chill: <span id="windOutput" class="output"></span></li>
+            <li>Humidity: <span class="output">30%</span></li>
+            <li>Wind Speed: <span class="output">10 mph</span></li>
+        </ul>
+
+        </section>
+    </div>
+
+   <section class="forecast">
+       <h3>5-Day Forecast</h3>
+       <table>
+            <thead>
+                <tr class="row01">
+                    <th>
+                    Monday
+                    </th>
+                    <th>
+                    Tuesday
+                    </th>
+                    <th>
+                    Wednesday
+                    </th>
+                    <th>
+                    Thursday
+                     </th>
+                    <th>
+                    Friday
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                     40&deg; <img class="forecastimg" src="images/rain.png" alt="rain">
+                    </td>
+                    <td>
+                    38&deg; <img class="forecastimg" src="images/rain.png" alt="rain">
+                    </td>
+                    <td>
+                    35&deg; <img class="forecastimg" src="images/rain.png" alt="rain">
+                    </td>
+                    <td>
+                    30&deg; <img class="forecastimg" src="images/snow.png" alt="rain">
+                    </td>
+                    <td>
+                    27&deg; <img class="forecastimg" src="images/snow.png" alt="rain">
+                    </td>
+                </tr>
+            </tbody>
+       </table>
+
+   </section>
+
+   <article class="preview">
+
+    <div class="group">
+
+      
+       <h3 class="preview-title">Best Time to Plant</h3>
+       <h4>By Farmer Joe</h4>
+
+       <figure class="previewimg">
+            <img src="images/sunshine.jpg" alt="sunshine on flowers">
+        </figure>
+      
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta tortor vitae quam bibendum, in condimentum orci luctus. In mauris ante, placerat quis quam at, mattis convallis nunc. Integer sollicitudin id erat sed efficitur. Nullam in mattis libero. Mauris mauris quam, blandit elementum viverra et, fringilla ut metus. Mauris placerat fringilla lectus et volutpat. Quisque dapibus sodales dignissim. Nunc mattis consectetur quam, ut pharetra enim porttitor nec. Maecenas pellentesque est nisl, id tempor lectus facilisis sed.</p>
+            <p>Proin ultrices a lectus sit amet feugiat. Phasellus metus velit, iaculis pellentesque egestas et, auctor non massa. Mauris pulvinar rutrum porta. Sed dolor dui, imperdiet ut ante ut, ultrices rutrum urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi a dignissim dolor. Fusce nisl urna, laoreet aliquam est vel, accumsan sollicitudin urna. Etiam venenatis nec purus et porta. Maecenas imperdiet feugiat justo ut facilisis. Fusce in nisl ac ex elementum porta eget in nulla. Nullam ornare suscipit tristique. Nullam a tellus quis metus elementum molestie at nec lectus. Curabitur viverra elit nisl, at bibendum diam maximus id. Ut lacinia elit lectus, ut venenatis est suscipit in. In efficitur lacus sed metus hendrerit, sed posuere lectus vestibulum. Quisque vitae aliquam nisl.</p>
+            <p><a href="#">Continue reading...</a></p>
+        </div>
+
+   </article>
+</main>
+
+<footer>
+
+   <div class="contact">
+
+        <div class="contact-info">
+        
+        <h5>
+            Contact Information
+        </h5>
+        
+        <p class="type">Phone: <span class="input">(208) 555-5555</span></p>
+        <p class="type">Email: <span class="input">gemstateweather@email.com</span></p>
+        <p class="type">Address: <span class="input">123 Main St Preston, ID 83263</span></p>
+                
+        
+        <div class="social-media">
+            <img src="images/facebook.png" alt="facebook logo">
+            <img src="images/insta.png" alt="instagram logo">
+            <img src="images/youtube.png" alt="youtube logo">
+        </div>
+
+        </div>
+        
+        <figure class="map">                
+            <img src="images/map.png" alt="map snippet">
+        </figure>
+        
+    </div>
+
+    
+
+    <div class="terms">
+
+    <div class="copyright">&copy; 2019 Gem State Weather | <a href="#" target="_blank">Terms of Use</a> | Bekah Claussen</div>
+
+    <span id="currentDate"></span>
+
+    </div>
+
+</footer>
+
+<script src="js/hamburger.js"></script>
+<script src="js/currentdate.js"></script>
+<script src="js/windchill.js"></script>
+
+</body>
+</html>

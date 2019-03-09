@@ -227,6 +227,15 @@ table, th, td {
     padding: 10px;
 }
 
+.articleGroup {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.article-item:nth-of-type(2) {
+    order: 3;
+}
+
 article figure.previewimg {
     width: 98%;
     margin: auto;
@@ -333,6 +342,19 @@ form button {
 }
 
 /*-----------Home Page-----------*/
+
+main figure.homeimg {
+    width: 97%;
+    margin: auto;
+}
+
+main figure.homeimg img {
+    width: 100%;
+}
+
+.homeimg {
+    display: none;
+}
 
 #townInfo {
     display: grid;

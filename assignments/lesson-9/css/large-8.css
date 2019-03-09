@@ -55,17 +55,19 @@
         margin-bottom: 3em;
     }
 
-    .group {
-        display: flex;
-        flex-flow: row wrap;
+
+    .articleGroup {
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        grid-column-gap: 20px;
     }
     
     article figure.previewimg {
-        width: 40%;
-        padding-left: 10px;
+        width: 100%;
+        margin-right: 10px;
     }
-    
-   
+
+
     footer figure.map {
         width: 30%;
     }

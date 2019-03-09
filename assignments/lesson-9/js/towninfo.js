@@ -30,6 +30,7 @@
 
                 var myPara1 = document.createElement('p');
                 myPara1.textContent = towns[i].motto;
+                myPara1.setAttribute('class', 'motto')
                 div.appendChild(myPara1);
 
                 var myPara2 = document.createElement('p');
@@ -76,6 +77,7 @@
                 
                 var img = document.createElement('img');
                 img.setAttribute('src', 'images/' + towns[i].name.replace(/\s+/g, '-').toLowerCase() + '.jpg');
+                img.setAttribute('alt', 'picture of a town');
                 figure.appendChild(img);
             }
 

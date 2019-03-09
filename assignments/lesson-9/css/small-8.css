@@ -235,9 +235,6 @@ article figure.previewimg {
 article figure.previewimg img {
     width: 100%;
 }
-.previewimg {
-    width: 100%;
-}
 
 .preview-title {
     text-align: left;
@@ -352,6 +349,14 @@ form button {
 
 .town p {
     text-align: center;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.town .motto {
+    color: #3f4743;
 }
 
 

@@ -54,21 +54,21 @@
     .preview {
         margin-bottom: 3em;
     }
+
+    .group {
+        display: flex;
+        flex-flow: row wrap;
+    }
     
     article figure.previewimg {
         width: 40%;
-        float: right;
         padding-left: 10px;
     }
     
-    .contact {
-        position: relative;
-    }
    
     footer figure.map {
         width: 30%;
     }
-    
     
     
 

@@ -1,0 +1,44 @@
+@media only screen and (min-width: 768px) {
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    .summary {
+        background: rgba(255,255,255,0.7);
+        top: 1em;
+        left: 3em;
+        padding: 1em;
+    }
+    
+    .summary h3 {
+        font-size: 1.8em;
+    }
+
+    .summary ul li {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .contact {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .social-media {
+        align-self: flex-end;
+    }
+
+    form {
+        width: 60%;
+        margin: auto;
+    }
+    
+}

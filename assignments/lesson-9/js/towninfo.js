@@ -73,6 +73,7 @@
                 myPara4.appendChild(mySpan6);
 
                 var figure = document.createElement('figure');
+                figure.setAttribute('class', 'townimg');
                 div.appendChild(figure);
                 
                 var img = document.createElement('img');

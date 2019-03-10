@@ -356,6 +356,10 @@ main figure.homeimg img {
     display: none;
 }
 
+.townimg {
+    margin: 0;
+}
+
 #townInfo {
     display: grid;
 }

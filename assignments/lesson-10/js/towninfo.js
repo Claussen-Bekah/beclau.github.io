@@ -14,7 +14,7 @@
     
     function showInfo(jsonData) {
 
-        var townNames = ['Fish Haven', 'Preston', 'Soda Springs']; //Make sure an image exists for each town with name [townname].jpg
+        var townNames = ['Fish Haven', 'Preston', 'Soda Springs']; //Make sure an image exists for each town with name [town-name].jpg
         var townInfo = document.getElementById('townInfo');
         var towns = jsonData['towns'];
 

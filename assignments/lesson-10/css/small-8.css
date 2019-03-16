@@ -96,7 +96,7 @@ nav a:hover {
 
 p, figcaption, legend, label {
     font-family: "Libre Baskerville", Georgia, 'Times New Roman', Times, serif;
-    font-size: .8em;
+    font-size: 1em;
 }
 
 h2, h3 {
@@ -125,6 +125,10 @@ h5 {
     font-size: 1.2em;
 }
 
+.smforecast {
+    font-size: 1.3em;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+}
 /*Weather summary/Wind Chill*/
 
 .snippet {
@@ -206,6 +210,9 @@ td {
 th {
     color: #ffffff;
     padding: 1em;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 100;
 }
 
 table, th, td {
@@ -213,11 +220,10 @@ table, th, td {
 }
 
 .forecastimg {
-    width: 40px;
+    width: 90px;
     display: block;
     margin: auto;
     padding-top: 10px;
-
 }
 
 /*Article preview*/

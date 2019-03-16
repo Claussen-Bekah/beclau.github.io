@@ -23,7 +23,7 @@ forecastRequest.onload =  function () {
 
             var myIcon = document.createElement('img');
             myIcon.setAttribute('src', 'http://openweathermap.org/img/w/' + list[i].weather[0].icon + '.png');
-            myIcon.setAttribute('class', 'forecasticon');
+            myIcon.setAttribute('class', 'forecastimg');
             myIcon.setAttribute('alt', 'weather icon');
             td.appendChild(myIcon);
 

@@ -55,10 +55,7 @@
         margin-bottom: 3em;
     }
 
-    .articleGroup h5 {
-        text-align: center;
-        color: #3f4743;
-    }
+   
 
     .articleGroup {
         display: grid;

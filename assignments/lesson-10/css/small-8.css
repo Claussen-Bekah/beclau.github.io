@@ -261,6 +261,11 @@ article figure.previewimg img {
     font-size: 1.4em;
 }
 
+.articleGroup h5 {
+    text-align: center;
+    color: #3f4743;
+}
+
 /*Gallery page*/
 
 .gallery {

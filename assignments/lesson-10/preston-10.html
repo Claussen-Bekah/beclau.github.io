@@ -60,11 +60,15 @@
 
         <h3>Weather Summary</h3>
         <ul class="summary-list">
-            <li>Currently: <span class="output">Cloudy</span></li>
-            <li>Temperature: <span class="output">30&deg; F</span></li>
+            <li>Currently: <span id="currentOutput" class="output"></span></li>
+
+            <li>Temperature: <span id="tempOutput" class="output"></span></li>
+
             <li>Wind Chill: <span id="windOutput" class="output"></span></li>
-            <li>Humidity: <span class="output">30%</span></li>
-            <li>Wind Speed: <span class="output">10 mph</span></li>
+
+            <li>Humidity: <span id="humidOutput" class="output"></span></li>
+
+            <li>Wind Speed: <span id="speedOutput" class="output"></span></li>
         </ul>
 
         </section>
@@ -93,22 +97,8 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>
-                     40&deg; <img class="forecastimg" src="images/rain.png" alt="rain">
-                    </td>
-                    <td>
-                    38&deg; <img class="forecastimg" src="images/rain.png" alt="rain">
-                    </td>
-                    <td>
-                    35&deg; <img class="forecastimg" src="images/rain.png" alt="rain">
-                    </td>
-                    <td>
-                    30&deg; <img class="forecastimg" src="images/snow.png" alt="rain">
-                    </td>
-                    <td>
-                    27&deg; <img class="forecastimg" src="images/snow.png" alt="rain">
-                    </td>
+                <tr id="dayOutput">
+                    
                 </tr>
             </tbody>
        </table>
@@ -121,17 +111,10 @@
         
         <div class="articleContent">
 
-        <div class="article-item">
-           <h3 class="preview-title">Best time to plant</h3>
-           <h4>By Farmer Joe</h4>
+        <div class="article-item" id="townEvents">
+         <h3>Town Events</h3>
         </div>
 
-        <div class="article-item">
-    
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta tortor vitae quam bibendum, in condimentum orci luctus. In mauris ante, placerat quis quam at, mattis convallis nunc. Integer sollicitudin id erat sed efficitur. Nullam in mattis libero. Mauris mauris quam, blandit elementum viverra et, fringilla ut metus. Mauris placerat fringilla lectus et volutpat. Quisque dapibus sodales dignissim. Nunc mattis consectetur quam, ut pharetra enim porttitor nec. Maecenas pellentesque est nisl, id tempor lectus facilisis sed.</p>
-                <p>Proin ultrices a lectus sit amet feugiat. Phasellus metus velit, iaculis pellentesque egestas et, auctor non massa. Mauris pulvinar rutrum porta. Sed dolor dui, imperdiet ut ante ut, ultrices rutrum urna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi a dignissim dolor. Fusce nisl urna, laoreet aliquam est vel, accumsan sollicitudin urna. Etiam venenatis nec purus et porta. Maecenas imperdiet feugiat justo ut facilisis. Fusce in nisl ac ex elementum porta eget in nulla. Nullam ornare suscipit tristique. Nullam a tellus quis metus elementum molestie at nec lectus. Curabitur viverra elit nisl, at bibendum diam maximus id. Ut lacinia elit lectus, ut venenatis est suscipit in. In efficitur lacus sed metus hendrerit, sed posuere lectus vestibulum. Quisque vitae aliquam nisl.</p>
-                <p><a href="#">Continue reading...</a></p>
-        </div>
         </div>
     
 
@@ -178,6 +161,7 @@
     
 
     <div class="terms">
+        <a href="https://openweathermap.org">OpenWeatherMap</a>
 
     <div class="copyright">&copy; 2019 Gem State Weather | <a href="#" target="_blank">Terms of Use</a> | Bekah Claussen</div>
 
@@ -190,6 +174,10 @@
 <script src="js/hamburger.js"></script>
 <script src="js/currentdate.js"></script>
 <script src="js/windchill.js"></script>
+<script src="js/weatherapi.js"></script>
+<script src="js/forecastapi.js"></script>
+<script src="js/townevents.js"></script>
+
 
 </body>
 </html>

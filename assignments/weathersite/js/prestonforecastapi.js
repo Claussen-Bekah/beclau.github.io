@@ -7,7 +7,7 @@ forecastRequest.open('GET', apiURLstring, true);
 forecastRequest.responseType = 'text';
 forecastRequest.send();
 
-forecastRequest.onload =  function () {
+forecastRequest.onload = function () {
     let weatherData = JSON.parse(forecastRequest.responseText);
 
     var dayOutput = document.getElementById('dayOutput');
@@ -30,6 +30,6 @@ forecastRequest.onload =  function () {
             span.setAttribute('class', 'smforecast');
             td.appendChild(span);
 
-            }
         }
+    }
 }

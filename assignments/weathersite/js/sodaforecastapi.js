@@ -1,13 +1,13 @@
 let forecastRequest = new XMLHttpRequest();
 
-var apiURLstring = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=be4b279b62e97c1113c247c06009cdee&units=imperial';
+var apiURLstring = 'https://api.openweathermap.org/data/2.5/forecast?id=5678757&APPID=be4b279b62e97c1113c247c06009cdee&units=imperial';
 
 forecastRequest.open('GET', apiURLstring, true);
 
 forecastRequest.responseType = 'text';
 forecastRequest.send();
 
-forecastRequest.onload =  function () {
+forecastRequest.onload = function () {
     let weatherData = JSON.parse(forecastRequest.responseText);
 
     var dayOutput = document.getElementById('dayOutput');
@@ -30,6 +30,6 @@ forecastRequest.onload =  function () {
             span.setAttribute('class', 'smforecast');
             td.appendChild(span);
 
-            }
         }
+    }
 }

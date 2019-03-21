@@ -6,7 +6,7 @@ weatherRequest.open('GET', apiURLstring, true);
 
 weatherRequest.send();
 
-weatherRequest.onload =  function () {
+weatherRequest.onload = function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
 
     var feature = weatherData['main'];
@@ -23,8 +23,3 @@ weatherRequest.onload =  function () {
     document.getElementById("windOutput").innerHTML = (Math.round(windChill * 10) / 10) + "&deg; F";
 
 }
-
-
-// Get forecast working including images
-
-// Get events separating 

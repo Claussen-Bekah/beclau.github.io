@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Soda Springs | Gem State Weather | Current Weather Conditions and Events</title>
+    <meta name="description" content="Soda Springs Idaho current weather conditions, upcoming events and contact info">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/small.css">
+
+    <link rel="stylesheet" href="css/medium.css">
+
+    <link rel="stylesheet" href="css/large.css">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" class="logo" alt="cloud and sun">
+
+        <div class="heading">
+            <h1 class="site-name">GEM STATE WEATHER</h1>
+
+            <div class="motto">No matter the weather, we'll be here to let you know</div>
+        </div>
+    </header>
+
+    <nav>
+        <button class="menu" onclick="toggleMenu()">&#9776; Menu</button>
+
+        <div class="navflex">
+            <ul id="primaryNav" class="hide">
+
+                <li><a href="home.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html" class="current">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Soda Springs, Idaho</h2>
+
+        <div class="snippet">
+
+            <figure class="snippetimg">
+                <img src="images/soda-springs-hero.jpg" alt="town in shadow of mountains" sizes="100vw" srcset="images/soda-springs-hero800.jpg 800w,
+                images/soda-springs-hero.jpg 1160w">
+            </figure>
+
+            <section class="summary">
+
+                <h3>Weather Summary</h3>
+                <ul class="summary-list">
+                    <li>Currently: <span id="currentOutput" class="output"></span></li>
+
+                    <li>Temperature: <span id="tempOutput" class="output"></span></li>
+
+                    <li>Wind Chill: <span id="windOutput" class="output"></span></li>
+
+                    <li>Humidity: <span id="humidOutput" class="output"></span></li>
+
+                    <li>Wind Speed: <span id="speedOutput" class="output"></span></li>
+                </ul>
+
+            </section>
+        </div>
+
+        <section class="forecast">
+            <h3>5-Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr class="row01">
+                        <th>
+                            Monday
+                        </th>
+                        <th>
+                            Tuesday
+                        </th>
+                        <th>
+                            Wednesday
+                        </th>
+                        <th>
+                            Thursday
+                        </th>
+                        <th>
+                            Friday
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="dayOutput">
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <article class="preview">
+
+            <div class="articleGroup">
+
+                
+
+                    <div class="articleImg">
+                        <figure class="previewimg">
+                            <img src="images/cowgirl.jpg" alt="woman riding horse in rodeo">
+                        </figure>
+                    </div>
+
+                <div class="articleContent">
+
+                    <h3>57th Annual Rodeo Success</h3>
+                    <h4>By Mayor Fielding</h4>
+
+                    <p>
+                        I'd like to make a big shoutout to all those who worked so hard and made the 57th Annual Soda Springs Rodeo such a massive success. Thank you especially to the Christensen and Yost families who catered the event. If you didn't get a scone, you missed out big time!
+                    </p>
+
+                    <p>
+                        And, of course, congratulations to our winners: Dusty Smith, Alan Big, Daisy Applegate, and Tiberius White. Dusty [pictured] wowed us with her athleticism atop her horse, Winnie, as she finished our course in record time. Alan sat atop his bucking bronco for an astounding 10 seconds, bringing the audience to their feet.
+                    </p>
+
+                    <p>
+                        And we've got to mention our littlest participants: Daisy and Tiberius. Both of these kids are only 7 years old, but they managed to get our hearts pumping in the mutton busting contest. I can't wait to see what they do next year! And, boy, do we have big plans for next year. Our theme for the rodeo this year was "Forward Together" and here in the mayoral office,we can't wait to see the strides we will make as a town in the year to come!
+                    </p>
+
+                    <a href="#">Continue reading...</a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article>
+            <div class="article-item" id="townEvents">
+                <h3>Town Events</h3>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+
+        <div class="contact">
+
+            <div class="contact-info">
+
+                <h5>
+                    Contact Information
+                </h5>
+
+                <p class="type">Phone: <span class="input">(208) 555-5555</span></p>
+                <p class="type">Email: <span class="input">gemstateweather@email.com</span></p>
+                <p class="type">Address: <span class="input">123 Main St Preston, ID 83263</span></p>
+
+
+                <div class="social-media">
+                    <img src="images/facebook.png" alt="facebook logo">
+                    <img src="images/insta.png" alt="instagram logo">
+                    <img src="images/youtube.png" alt="youtube logo">
+                </div>
+
+            </div>
+
+            <figure class="map">
+                <img src="images/map.png" alt="map snippet">
+            </figure>
+
+        </div>
+
+
+
+        <div class="terms">
+            <a href="https://openweathermap.org" target='_blank'>OpenWeatherMap</a>
+
+            <div class="copyright">&copy; 2019 Gem State Weather | <a href="#" target="_blank">Terms of Use</a> | Bekah
+                Claussen</div>
+
+            <span id="currentDate"></span>
+
+        </div>
+
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/sodaweatherapi.js"></script>
+    <script src="js/sodaforecastapi.js"></script>
+    <script src="js/sodatownevents.js"></script>
+
+
+</body>
+
+</html>

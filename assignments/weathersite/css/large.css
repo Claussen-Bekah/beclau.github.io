@@ -1,0 +1,134 @@
+@media only screen and (min-width: 992px) {
+
+    body{
+        width: 100%;
+    }
+
+    main {
+        width: 85%;
+        margin: auto;
+    }
+
+    footer {
+        width: 90%;
+        margin: auto;
+    }
+
+    .navflex {
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    nav ul li {
+        padding: .62em;
+    }
+
+    nav ul li a {
+        font-size: 1.1em;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .forecast {
+        display: block;
+    }
+   
+    .preview {
+        margin-bottom: 3em;
+    }
+
+    .articleGroup {
+        display: grid;
+        grid-template-columns: 1fr .5fr;
+        grid-column-gap: 20px;
+    }
+    
+    .previewimg {
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .articleImg {
+        grid-column-start: 2;
+    }
+
+    .articleContent {
+        grid-row-start: 1;
+    }
+
+    .articleContent p, .articleContent a{
+        margin-left: 20px;
+    }
+
+    footer figure.map {
+        width: 30%;
+    }
+    
+
+    /*Gallery*/
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery figure:hover {
+        box-shadow: 0 0 30px #3f4743;
+    }
+
+    /*------Storm Center------*/
+
+    form {
+        width: 35%;
+    }
+
+    form input:focus {
+        box-shadow: 0 0 5px #456990;
+        border: 1px solid #456990;
+    }       
+    
+    form input:hover {
+        border: 1px solid orange;
+    }
+
+    form button:hover {
+        background-color: #3f4743;
+        color: white;
+    }
+    
+    form button {
+        width: 200px;
+    }
+
+    #stormRating {
+        width: 30%;
+    }
+
+    /*------Home Page------*/
+
+    #townInfo {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    
+}
+

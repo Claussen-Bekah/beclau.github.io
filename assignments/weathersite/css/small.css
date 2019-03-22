@@ -367,6 +367,10 @@ main figure.homeimg img {
     width: 100%;
 }
 
+#previewhome {
+    padding-top: 10px;
+}
+
 .homeimg {
     display: none;
 }

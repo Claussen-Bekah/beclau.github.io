@@ -1,12 +1,7 @@
 @media only screen and (min-width: 992px) {
 
-    body{
-        width: 100%;
-    }
-
     main {
         width: 85%;
-        margin: auto;
     }
 
     footer {
@@ -84,8 +79,12 @@
         width: 30%;
     }
     
+    .contact {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
 
-    /*Gallery*/
+    /*---------Gallery---------*/
 
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;

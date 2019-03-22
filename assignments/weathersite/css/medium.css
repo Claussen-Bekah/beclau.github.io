@@ -5,6 +5,11 @@
         margin: auto;
     }
 
+    .site-name {
+        font-size: 2.5em;
+        margin: 1em 0 0 0;
+    }
+
     .summary {
         background: rgba(255,255,255,0.7);
         top: 1em;

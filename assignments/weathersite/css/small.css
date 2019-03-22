@@ -5,35 +5,29 @@ body {
     width: 100%;
 }
 
-
-/*Header*/
-
 header {
     background-color: #456990;
     text-align: center;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: center;
     align-content: center;
 }
 
 .site-name {
     font-family: "Patua One", "Big Caslon", Cambria, serif;
-    font-size: 2.5em;
+    font-size: 1.5em;
     color: #ffffff;
     font-weight: 100;
+    margin: 2em 0 0 0;
 }
 
 .motto {
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 1em;
     color: #dfd9e2;
     font-style: oblique;
     padding-bottom: 10px;
-
 }
-
-/*Navigation*/
 
 .navflex {
     display: flex;
@@ -92,8 +86,6 @@ nav a:hover {
     padding: .7em;
 }
 
-/*General font*/
-
 p,
 figcaption,
 legend,
@@ -102,24 +94,22 @@ label {
     font-size: 1em;
 }
 
-h2,
-h3 {
+h2 {
+    font-size: 1.7em;
     font-family: Nunito, Arial, Helvetica, sans-serif;
     color: #456990;
     text-align: center;
 }
 
-h2 {
-    font-size: 1.7em;
-}
-
 h3 {
     font-size: 1.5em;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color: #456990;
+    text-align: center;
 }
 
 h4 {
     font-family: Nunito, Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
     color: #3f4743;
 }
 
@@ -131,11 +121,8 @@ h5 {
 
 
 .smforecast {
-    font-size: 1.3em;
     font-family: Nunito, Arial, Helvetica, sans-serif;
 }
-
-/*Weather summary/Wind Chill*/
 
 .snippet {
     display: grid;
@@ -151,8 +138,6 @@ main figure.snippetimg img {
     width: 100%;
 }
 
-/*Summary box*/
-
 .summary {
     position: absolute;
     background: rgba(255, 255, 255, 0.7);
@@ -163,7 +148,6 @@ main figure.snippetimg img {
 
 .summary h3 {
     text-decoration: underline;
-    font-size: 1em;
     margin: 0;
     padding: 5px;
 }
@@ -184,9 +168,6 @@ main figure.snippetimg img {
     color: #456990;
     font-weight: bold;
 }
-
-
-/*5 day forecast*/
 
 .forecast {
     display: none;
@@ -234,8 +215,6 @@ td {
     padding-top: 10px;
 }
 
-/*Article preview*/
-
 .preview {
     background-color: #dfd9e2;
     padding: 10px;
@@ -270,8 +249,6 @@ article figure.previewimg img {
     color: #3f4743;
 }
 
-/*Gallery page*/
-
 .gallery {
     display: grid;
 }
@@ -284,9 +261,6 @@ article figure.previewimg img {
     text-align: center;
     padding: 10px 0;
 }
-
-/*Storm Center Page*/
-
 
 form fieldset {
     margin: 1em;
@@ -345,7 +319,7 @@ form button {
     border-radius: 10px;
     padding: 1em;
     width: 90%;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family: "Patua One", "Big Caslon", Cambria, serif;
     color: #456990;
     background-color: #dfd9e2;
@@ -355,8 +329,6 @@ form button {
 #stormRating {
     width: 80%;
 }
-
-/*-----------Home Page-----------*/
 
 main figure.homeimg {
     width: 97%;
@@ -404,15 +376,10 @@ main figure.homeimg img {
     color: #3f4743;
 }
 
-
-/*Thanks*/
-
 #thanks {
     text-align: center;
 }
 
-
-/*Footer contact info*/
 
 .contact {
     background-color: #3f4743;
@@ -420,6 +387,7 @@ main figure.homeimg img {
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
+    padding-left: 20px;
 
 }
 
@@ -428,14 +396,11 @@ main figure.homeimg img {
     color: #dfd9e2;
 }
 
-
 .social-media img {
     width: 40px;
     padding-right: 10px;
     padding-bottom: 10px;
 }
-
-/*Footer map*/
 
 footer figure.map {
     width: 70%;
@@ -444,8 +409,6 @@ footer figure.map {
 footer figure.map img {
     width: 100%;
 }
-
-/*Footer terms and copyright*/
 
 .terms {
     text-align: center;
@@ -457,8 +420,6 @@ footer figure.map img {
 footer {
     padding-bottom: 50px;
 }
-
-/*Clearfix*/
 
 .group:after {
     content: "";

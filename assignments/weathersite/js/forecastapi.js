@@ -14,9 +14,7 @@ for (let i = 0; i < city.length; i++) {
         forecastRequest.responseType = 'text';
         forecastRequest.send();
 
-        forecastRequest.onload = function buildForecast() {
-
-            console.log(JSON.parse(forecastRequest.responseText));
+        forecastRequest.onload = function() {
         
             let weatherData = JSON.parse(forecastRequest.responseText);
         

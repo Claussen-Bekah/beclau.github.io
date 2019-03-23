@@ -21,6 +21,7 @@ for (let i = 0; i < city.length; i++) {
                     for (let iii = 0; iii < events.length; iii++) {
                         var myH5 = document.createElement('h5');
                         myH5.textContent = towns[ii].events[iii];
+                        myH5.setAttribute('class', 'events');
                         townEvents.appendChild(myH5);
                     }
                 }

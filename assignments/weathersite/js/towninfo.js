@@ -79,6 +79,7 @@
                 var img = document.createElement('img');
                 img.setAttribute('src', 'images/' + towns[i].name.replace(/\s+/g, '-').toLowerCase() + '.jpg');
                 img.setAttribute('alt', 'picture of ' + towns[i].name);
+                img.setAttribute('class', 'townImage');
                 figure.appendChild(img);
             }
 

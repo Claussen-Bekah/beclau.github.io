@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gallery | Gem State Weather </title>
-    <meta name="description" content="Southeast Idaho gallery of past weather conditions">
+    <meta name="description" content="Southeast Idaho gallery of past weather conditions, local events, and other weather- and scenery-related images">
 
     <link rel="stylesheet" href="css/normalize.css">
 
@@ -15,8 +15,7 @@
 
     <link rel="stylesheet" href="css/large.css">
 
-
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Mirza|Nunito|Patua+One">
 
 </head>
 
@@ -50,35 +49,47 @@
     <main>
         <div class="gallery">
             <figure>
-                <img src="images/sunrise.jpg" alt="sunrise in mountains">
+                <img src="images/sunrise.jpg" alt="There's nothing better than waking up to this view of Scout Mountain"
+                    class="myImage">
                 <figcaption>There's nothing better than waking up to this view of Scout Mountain</figcaption>
             </figure>
 
             <figure>
-                <img src="images/winter.jpg" alt="wintry scene">
+                <img src="images/winter.jpg" alt="Winter in Soda Springs" class="myImage">
                 <figcaption>Winter in Soda Springs</figcaption>
             </figure>
 
             <figure>
-                <img src="images/snow.jpg" alt="lots of snow with houses">
+                <img src="images/snow.jpg" alt="Snow fall just outside of Preston" class="myImage">
                 <figcaption>Snow fall just outside of Preston</figcaption>
             </figure>
 
             <figure>
-                <img src="images/summerbiking.jpg" alt="woman biking through park with sunshine">
+                <img src="images/summerbiking.jpg" alt="Summer is a great time to get out and get active"
+                    class="myImage">
                 <figcaption>Summer is a great time to get out and get active</figcaption>
             </figure>
 
             <figure>
-                <img src="images/clouds.jpg" alt="clouds over mountains">
+                <img src="images/clouds.jpg" alt="Beautiful misty mountains make for an impressive view"
+                    class="myImage">
                 <figcaption>Beautiful misty mountains make for an impressive view</figcaption>
             </figure>
 
             <figure>
-                <img src="images/sunmountains.jpg" alt="summer mountains with a lake and clouds">
+                <img src="images/sunmountains.jpg" alt="Fish Haven in the summer = paradise" class="myImage">
                 <figcaption>Fish Haven in the summer = paradise</figcaption>
             </figure>
+        </div>
 
+
+        <div id="myModal" class="modal">
+
+            <span class="close">&times;</span>
+
+            <img class="modal-content" id="img01">
+
+            <div id="caption"></div>
         </div>
 
     </main>
@@ -127,7 +138,7 @@
 
     <script src="js/hamburger.js"></script>
     <script src="js/currentdate.js"></script>
-
+    <script src="js/modal.js"></script>
 
 </body>
 

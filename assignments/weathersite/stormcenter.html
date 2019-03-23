@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Storm Center | Gem State Weather | Report Weather</title>
     <meta name="description"
-        content="Report any current and local weather conditions to our system for others to see and comment on">
+        content="Report any current and local weather conditions to our system for others to see and comment on and help build southeast Idaho's largest database of current weather conditions">
 
     <link rel="stylesheet" href="css/normalize.css">
 
@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/medium.css">
 
     <link rel="stylesheet" href="css/large.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Mirza|Nunito|Patua+One">
+
 
 
 </head>
@@ -76,7 +79,7 @@
                 </datalist>
 
                 <label class="userInput highSpace" for="stormRating">Storm Severity (1-10)</label><input type="range"
-                    name="stormSeverity" id="stormRating" min="1" max="10" step="1" oninput="changeSlider(this.value)"
+                    name="stormSeverity" class="stormRating" min="1" max="10" step="1" oninput="changeSlider(this.value)"
                     onchange="changeSlider(this.value)">
                 <span id="rangeValue">6</span>
 

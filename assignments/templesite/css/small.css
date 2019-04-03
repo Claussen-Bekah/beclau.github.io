@@ -1,0 +1,92 @@
+body {
+    width: 100%;
+    margin: auto;
+}
+
+.homeGrid {
+    display: grid;  
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #c6c5b9;
+}
+
+.logo {
+    background-color: white;
+    padding: 10px 5px 10px 10px;
+    width: 80px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    border: 0;
+    border-radius: 0.25em;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin-left: .5em;
+    cursor: pointer;
+}
+
+.largeRow2 {
+    display: none;
+}
+
+
+h1 {
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: white;
+}
+
+.current {
+    background-color: #c6c5b9;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.nav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #635c51; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 60px 0 0 0; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .nav li a, .close {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+
+  nav ul {
+      list-style-type: none;
+      margin: 0;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .nav a:hover {
+    color: #b2d8d3;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .nav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 4em;
+    margin-left: 50px;
+  }

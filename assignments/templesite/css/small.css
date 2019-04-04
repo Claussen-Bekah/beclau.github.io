@@ -1,22 +1,19 @@
 body {
-    width: 100%;
+    max-width: 100%;
     margin: auto;
 }
 
-.homeGrid {
-    display: grid;  
-}
 
-.header {
+.headerTop {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     background-color: #c6c5b9;
 }
 
 .logo {
-    background-color: white;
-    padding: 10px 5px 10px 10px;
-    width: 80px;
+    padding: 10px;
+    width: 60px;
     margin: 10px;
 }
 
@@ -34,34 +31,37 @@ button {
     display: none;
 }
 
-
 h1 {
     font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: white;
 }
 
 .current {
     background-color: #c6c5b9;
-    padding: 5px;
-    margin-top: 5px;
+    padding: 10px 0 10px 0;
 }
 
 .nav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
-    background-color: #635c51; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding: 60px 0 0 0; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  
-  /* The navigation menu links */
-  .nav li a, .close {
+    background-color: #635c51;
+    overflow-x: hidden;
+    padding: 60px 0 0 0;
+    transition: 0.5s;
+}
+
+.hide {
+    display: none;
+}
+
+
+.nav li a,
+.close {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 1.5em;
@@ -70,23 +70,161 @@ h1 {
     transition: 0.3s;
     font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
     cursor: pointer;
-  }
+}
 
-  nav ul {
-      list-style-type: none;
-      margin: 0;
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .nav a:hover {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+
+.nav a:hover {
     color: #b2d8d3;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .nav .close {
+}
+
+
+.nav .close {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 4em;
     margin-left: 50px;
-  }
+}
+
+.row1 figure {
+    width: 100%;
+    margin: auto;
+}
+
+.row1 figure img {
+    width: 100%;
+}
+
+.row1 {
+    position: relative;
+}
+
+.reserveBtn {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    bottom: 1em;
+    left: .5em;
+}
+
+.reserveLink {
+    text-decoration: none;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    color: #dc851f;
+    font-size: 1.3em;
+}
+
+h2 {
+    font-family: 'Josefin Sams', Arial, Helvetica, sans-serif;
+    color: #635c51;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+p {
+    font-family: Vollkorn, 'Times New Roman', Times, serif;
+    color: #635c51;
+}
+
+.summaryPic {
+    width: 100%;
+    margin: auto;
+}
+
+.summaryPic img {
+    width: 100%;
+}
+
+.smallRow2 {
+    background-color: #c6c5b9;
+    padding: 20px;
+}
+
+.subheading {
+    color: white;
+    text-align: center;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.weatherSummary p {
+    text-align: center;
+    font-size: 1.1em;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.row2Head {
+    margin-bottom: 5px;
+}
+
+.amenityIcons {
+    display: flex;
+}
+
+.row3 figure {
+    width: 20%;
+    margin: auto;
+}
+
+.row3 figure img {
+    width: 100%;
+}
+
+.row3 figcaption {
+    padding: 10px;
+    font-family: Vollkorn, 'Times New Roman', Times, serif;
+    font-size: 1.2;
+    color: #635c51;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background: #635c51;
+}
+
+.contact ul {
+    list-style-type: none;
+    color: white;
+    padding: 0 0 0 10px;
+    font-family: Vollkorn, 'Times New Roman', Times, serif;
+}
+
+.contact ul li {
+    padding: 7px 7px 0 7px;
+}
+
+h3 {
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    margin: 5px;
+    color: white;
+}
+
+
+.socialMedia figure {
+    width: 30%;
+    margin: auto;
+}
+
+.socialMedia figure img {
+    width: 100%;
+    padding: 10px;
+}
+
+.start {
+    color: #b2d8d3;
+}
+
+.attribution {
+    font-size: .6em;
+}

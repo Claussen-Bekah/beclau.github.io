@@ -141,11 +141,7 @@
         background-color: #635c51;
         min-width: 160px;
         z-index: 1;
-    }
-
-
-    .dropdown:hover .dropdown-content {
-        display: block;
+        
     }
 
     h1 {

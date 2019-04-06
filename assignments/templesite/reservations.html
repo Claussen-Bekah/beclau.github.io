@@ -68,8 +68,8 @@
 
             <fieldset>
                 <legend>Reservation Information</legend>
-                <label class="userInput highSpace" for="location-select">Location*</label required> <select name="location"
-                    id="location-select">
+                <label class="userInput highSpace" for="location-select">Location*</label> <select name="location"
+                    id="location-select" required>
                     <option value="">Select Location...</option>
                     <option value="Copenhagen, Denmark">Copenhagen, Denmark</option>
                     <option value="Tijuana, Mexico">Tijuana, Mexico</option>
@@ -77,16 +77,16 @@
                     <option value="Melbourne, Australia">Melbourne, Australia</option>
                 </select>
 
-                <label class="userInput highSpace" for="room-select" required>Room Type*</label> <select name="room"
-                    id="room-select">
+                <label class="userInput highSpace" for="room-select">Room Type*</label> <select name="room"
+                    id="room-select" required>
                     <option value="">Select Room Type...</option>
                     <option value="2 Bedroom">2 Bedroom</option>
                     <option value="Studio w/ Kitchenette (long-term)">Studio w/ Kitchenette (long-term)</option>
                     <option value="Studio">Studio</option>
                 </select>
 
-                <label class="userInput highSpace" for="number-select" required>Number of Rooms*</label> <select name="number"
-                    id="number-select">
+                <label class="userInput highSpace" for="number-select">Number of Rooms*</label> <select name="number"
+                    id="number-select" required>
                     <option value="">Select Number of Rooms...</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -95,11 +95,11 @@
                     
                 </select>
 
-                <label class="userInput highSpace" for="start" required>Start Date*:</label>
+                <label class="userInput highSpace" for="start" >Start Date*:</label>
 
-                <input type="date" id="start" name="trip-start" class="dateInput" min="2019-04-06">
-                <label class="userInput highSpace" for="end" required>End Date*:</label>
-                <input type="date" id="end" name="trip-end" min="2019-04-07" class="dateInput" >
+                <input type="date" id="start" name="trip-start" class="dateInput" min="2019-04-06" required>
+                <label class="userInput highSpace" for="end">End Date*:</label>
+                <input type="date" id="end" name="trip-end" min="2019-04-07" class="dateInput" required>
 
                 <label class="userInput highSpace">Special Requests or Comments</label><textarea name="comments"
                     class="comments"></textarea>

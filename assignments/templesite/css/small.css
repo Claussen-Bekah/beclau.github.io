@@ -33,7 +33,7 @@ button {
 
 h1 {
     font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
-    font-size: 1.3em;
+    font-size: 1em;
     color: white;
 }
 
@@ -109,6 +109,7 @@ nav ul {
     background: rgba(255, 255, 255, 0.9);
     bottom: 1em;
     left: .5em;
+    width: 90%;
 }
 
 .reserveLink {
@@ -176,6 +177,7 @@ p {
 
 .row3 figure img {
     width: 100%;
+    margin-bottom: 1em;
 }
 
 .row3 figcaption {

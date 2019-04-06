@@ -1,11 +1,63 @@
 @media only screen and (min-width: 992px) {
 
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
     .largeRow2 {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        grid-row-start: 2;
+        background-color: #c6c5b9;
+    }
+
+    .largeRow4 {
+        grid-row-start: 4;
+    }
+
+    .subheading {
+        font-size: 2em;
+    }
+
+    .row2column2 ul {
+        font-family: Vollkorn, 'Times New Roman', Times, serif;
+        color: #635c51;
+        font-size: 1.3em;
+    }
+
+    .weatherSummary p {
+        font-size: 1.7em;
+    }
+
+    .row1 figure {
+        width: 90%;
+        margin-top: 1em;
+    }
+
+    .row3 {
+        align-self: center;
+    }
+
+    .row3 figure {
+        width: 10%;
+        margin-top: 1.5em;
     }
 
     .reserveBtn {
         display: none;
+    }
+
+    .reserveBtn2 {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .secondBtn {
@@ -68,7 +120,7 @@
 
     .logo {
         order: 1;
-        padding: 0;
+        padding: 0 0 0 40px;
     }
 
     .current {
@@ -106,13 +158,35 @@
         display: block;
     }
 
-    .logo {
-        
-    }
-
     h1 {
         font-size: 4em;
         margin: 0 0 0 .5em;
+    }
+
+
+    .homeGrid {
+        display: grid;
+        grid-template-rows: .5fr .5fr .5fr .5fr;
+        width: 80%;
+        margin: auto;
+        align-content: center;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    .socialMedia {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .socialMedia figure {
+        width: 10%;
+    }
+
+    .contactInfo {
+        margin-top: 20px;
     }
 
 

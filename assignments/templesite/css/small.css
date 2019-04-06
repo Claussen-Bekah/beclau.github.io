@@ -291,3 +291,7 @@ input:focus, select:focus, textarea:focus {
 form img {
     display: none;
 }
+
+.thanksPic {
+    display: none;
+}

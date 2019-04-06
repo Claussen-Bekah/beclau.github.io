@@ -185,5 +185,10 @@
         width: 30%;
         align-self: center;
     }
+    
+    .thanksPic {
+        display: block;
+        margin: auto;
+    }
 
 }

@@ -37,10 +37,12 @@ h1 {
     color: white;
 }
 
-.nav .current {
+.smallNav .current {
     background-color:white;
     color: #b2d8d3;
-    margin-top: 20px;
+}
+.extraSpace {
+margin-top: 20px;
 }
 
 .nav {
@@ -284,6 +286,9 @@ select, .dateInput, ::placeholder {
     display: none;
 }
 
+.largeNav {
+    display: none;
+}
  option {
      color: #635c51;
  }

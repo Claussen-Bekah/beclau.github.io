@@ -1,3 +1,4 @@
 function openSub(){
-    document.getElementById("subNav").classList.toggle("hide");
+    document.getElementById("lgsubNav").classList.toggle("hide");
+    document.getElementById("smsubNav").classList.toggle("hide");
 }

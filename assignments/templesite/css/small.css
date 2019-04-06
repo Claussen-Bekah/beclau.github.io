@@ -60,7 +60,7 @@ h1 {
 }
 
 
-.nav li a,
+.nav a,
 .close {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -72,10 +72,6 @@ h1 {
     cursor: pointer;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-}
 
 
 .nav a:hover {

@@ -83,14 +83,14 @@
         justify-content: flex-end;
     }
 
-    .nav ul {
+    .nav {
         align-self: flex-start;
     }
 
-    .nav li a {
+    .nav a {
         display: flex;
         transition: none;
-        padding: 8px;
+        padding: 20px 8px 20px 8px;
         margin: 0 30px 0 30px;
     }
 
@@ -118,7 +118,7 @@
         text-decoration: underline;
     }
 
-    .hide li {
+    .hide a {
         margin: 0;
         padding: 0;
     }

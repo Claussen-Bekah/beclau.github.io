@@ -28,23 +28,22 @@
         <div class="headerTop">
             <nav>
                 <button class="menu" onclick="openNav()">&#9776;</button>
-                <ul id="primaryNav" class="nav">
-                    <li class="close" onclick="closeNav()">&times;</li>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="reservations.html">Reservations</a></li>
-                    <li><a href="templeinfo.html">Temple Information</a></li>
-                    <li><div class="dropdown">
-                        <li><a href="#" onclick="openSub()" class="dropbtn">Services &#62;</a></li>
-                        
-                        <li><div class="dropdown-content">
+                <div id="primaryNav" class="nav">
+                    <span class="close" onclick="closeNav()">&times;</span>
+                    <a href="index.html" class="current">Home</a>
+                    <a href="reservations.html">Reservations</a>
+                    <a href="templeinfo.html">Temple Information</a>
+                    <div class="dropdown">
+                        <a href="#" onclick="openSub()" class="dropbtn">Services &#62;</a>
+                        <div class="dropdown-content">
                             <ul class="hide" id="subNav">
-                                <li><a href="services.html">Amenities</a></li>
-                                <li><a href="receptioncenter.html">Reception Center</a></li>
-                                <li><a href="missionaryinfo.html">Full-Time Missionary</a></li>
+                                <a href="services.html">Amenities</a>
+                                <a href="receptioncenter.html">Reception Center</a>
+                                <a href="missionaryinfo.html">Full-Time Missionary</a>
                             </ul>
-                        </div></li>
-                    </div></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                        </div>
+                    </div>
+                    <a href="contact.html">Contact Us</a>
                 </ul>
             </nav>
             <img src="images/logo.png" class="logo" alt="Temple Inn and Suites Logo">

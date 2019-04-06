@@ -190,5 +190,18 @@
         display: block;
         margin: auto;
     }
+    .smgoogleMap {
+        display: none;
+    }
+
+    .mdgoogleMap {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .contactMain {
+        width: 50%;
+        margin: auto;
+    }
 
 }

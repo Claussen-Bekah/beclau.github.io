@@ -271,10 +271,18 @@ input, select, textarea {
     box-sizing: border-box;
 }
 
-select, textarea, .dateInput, ::placeholder {
+select, .dateInput, ::placeholder {
     color: #c6c5b9;
 }
 
+.smgoogleMap {
+    margin: auto;
+    padding-top: 30px;
+}
+
+.mdgoogleMap {
+    display: none;
+}
 
  option {
      color: #635c51;

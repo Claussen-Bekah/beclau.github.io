@@ -110,13 +110,9 @@ nav ul {
     bottom: 1em;
     left: .5em;
     width: 90%;
-}
-
-.reserveLink {
-    text-decoration: none;
     font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
     color: #dc851f;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 h2 {

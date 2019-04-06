@@ -33,7 +33,7 @@
                     <li class="current"><a href="index.html">Home</a></li>
                     <li><a href="reservations.html">Reservations</a></li>
                     <li><a href="templeinfo.html">Temple Information</a></li>
-                    <div class="dropdown">
+                    <span class="dropdown">
                         <li><a href="#" onclick="openSub()" class="dropbtn">Services &#62;</a></li>
                         <div class="dropdown-content">
                             <ul class="hide" id="subNav">
@@ -42,7 +42,7 @@
                                 <li><a href="missionaryinfo.html">Full-Time Missionary</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </span>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
@@ -60,7 +60,7 @@
                     <img src="images/row1.jpg" alt="Tijuana, Mexico temple" sizes="100vw" srcset="images/row1-800.jpg 800w,
                 images/row1.jpg 1160w">
                 </figure>
-                <button class="reserveBtn"><a href="reservations.html" class="reserveLink">Reserve Now</a></button>
+                <button class="reserveBtn" onclick="window.open('reservations.html','_blank')" type="button">Reserve Now</button>
             </div>
             <div class="smallRow2 largeRow4">
                 <div class="row2column1">
@@ -110,7 +110,7 @@
                         <li>Copenhagen, Denmark</li>
                         <li>Melbourne, Australia</li>
                     </ul>
-                    <button class="reserveBtn2"><a class="secondLink" href="reservations.html">Reserve Now</a></button>
+                    <button class="secondBtn" onclick="window.open('reservations.html','_blank')" type="button">Reserve Now</button>
                     
                 </div>
 

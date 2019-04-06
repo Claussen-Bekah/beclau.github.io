@@ -113,9 +113,9 @@
         padding: 0 0 0 40px;
     }
 
-    .current {
-        background-color: #635c51;
-        text-decoration: underline;
+    .nav .current {
+        margin-top: 0;
+        padding: 20px;
     }
 
     .hide a {
@@ -175,5 +175,15 @@
         margin-top: 20px;
     }
 
+    form figure img {
+        margin: 10px ;
+        display: block;
+        width: 100%;
+    }
+
+    form figure {
+        width: 30%;
+        align-self: center;
+    }
 
 }

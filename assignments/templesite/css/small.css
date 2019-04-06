@@ -37,9 +37,10 @@ h1 {
     color: white;
 }
 
-.current {
-    background-color: #c6c5b9;
-    padding: 10px 0 10px 0;
+.nav .current {
+    background-color:white;
+    color: #b2d8d3;
+    margin-top: 20px;
 }
 
 .nav {
@@ -227,27 +228,66 @@ legend {
     font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
     font-size: 2em;
     color: #dc851f;
+    border-bottom: 2px #c6c5b9 solid;
 }
 .userInput {
     font-family: Vollkorn, 'Times New Roman', Times, serif;
     color: #635c51;
     font-size: 1.2em;
+    margin-bottom: 20px;
+}
 
+.highSpace {
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 form {
     display: flex;
     flex-flow: column nowrap;
+    margin-bottom: 20px;
 }
 
 fieldset {
     margin-top: 20px;
     display: flex;
     flex-flow: column nowrap;
+    border: none;
+}
+
+.formButton {
+    margin-top: 20px;
+    width: 95%;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    color: #dc851f;
 }
 
 input, select, textarea {
     border: 2px #b2d8d3 solid;
     padding: 10px;
     margin-left: 10px;
+    border-radius: 10px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+select, textarea, .dateInput, ::placeholder {
+    color: #c6c5b9;
+}
+
+
+ option {
+     color: #635c51;
+ }
+
+input:hover, select:hover, textarea:hover {
+    border: 2px #c6c5b9 solid;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 3px #dc851f solid;
+} 
+
+form img {
+    display: none;
 }

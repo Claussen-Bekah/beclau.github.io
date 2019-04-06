@@ -47,5 +47,10 @@
     .amenityIcons figcaption {
         font-size: 1.3em;
     }
-
+form {
+    flex-flow: row nowrap;
+}
+    fieldset {
+        flex-flow: row nowrap;
+    }
 }

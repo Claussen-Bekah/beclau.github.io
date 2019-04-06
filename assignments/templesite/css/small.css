@@ -222,3 +222,32 @@ h3 {
 .attribution {
     font-size: .6em;
 }
+
+legend {
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    color: #dc851f;
+}
+.userInput {
+    font-family: Vollkorn, 'Times New Roman', Times, serif;
+    color: #635c51;
+    font-size: 1.2em;
+
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+fieldset {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+input, select, textarea {
+    border: 2px #b2d8d3 solid;
+    padding: 10px;
+    margin-left: 10px;
+}

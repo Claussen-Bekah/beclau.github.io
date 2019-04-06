@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Temple Inn & Suites | Plan your upcoming temple trip with us</title>
+    <meta name="description"
+        content="Home page for Temple Inn & Suites: plan an easy, stress-free temple trip to any of our temple sites and focus on ordinances, rather than logistics">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/small.css">
+
+    <link rel="stylesheet" href="css/medium.css">
+
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans%7CVollkorn">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="headerTop">
+            <nav>
+                <button class="menu" onclick="openNav()">&#9776;</button>
+                <div id="primaryNav" class="nav">
+                    <span class="close" onclick="closeNav()">&times;</span>
+                    <a href="index.html" class="current">Home</a>
+                    <a href="reservations.html">Reservations</a>
+                    <a href="templeinfo.html">Temple Information</a>
+                    <div class="dropdown">
+                        <a href="#" onclick="openSub()" class="dropbtn">Services &#62;</a>
+                        <div class="dropdown-content">
+                            <div class="hide" id="subNav">
+                                <a href="services.html">Amenities</a>
+                                <a href="receptioncenter.html">Reception Center</a>
+                                <a href="missionaryinfo.html">Full-Time Missionary</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </nav>
+            <img src="images/logo.png" class="logo" alt="Temple Inn and Suites Logo">
+            <h1>Temple Inn & Suites</h1>
+        </div>
+    </header>
+
+    <main>
+
+        <form method="GET" target="_blank" action="thanks.html">
+            <fieldset>
+                <legend>Register Information</legend>
+                <label class="userInput">Full name*<input type="text" name="name" placeholder="Jane Smith"
+                        pattern="[A-Za-z\s]{5,}" required></label>
+                <label class="userInput">Email*<input type="email" name="email" placeholder="example@email.com"
+                        required></label>
+                <label class="userInput">Phone Number*<input type="tel" name="phone" placeholder="5551234567"
+                        required></label>
+                <label class="userInput">Home State or Country*<input type="text" name="location"
+                        placeholder="Australia" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reservation Information</legend>
+                <label class="userInput highSpace" for="location-select">Location</label> <select name="location"
+                    id="location-select">
+                    <option value="">Select Location...</option>
+                    <option value="Copenhagen, Denmark">Copenhagen, Denmark</option>
+                    <option value="Tijuana, Mexico">Tijuana, Mexico</option>
+                    <option value="Cebu City, Phillipines">Cebu City, Phillipines</option>
+                    <option value="Melbourne, Australia">Melbourne, Australia</option>
+                </select>
+
+                <label class="userInput highSpace" for="room-select">Room Type</label> <select name="room"
+                    id="room-select">
+                    <option value="">Select Room Type...</option>
+                    <option value="2 Bedroom">2 Bedroom</option>
+                    <option value="Studio w/ Kitchenette (long-term)">Studio w/ Kitchenette (long-term)</option>
+                    <option value="Studio">Studio</option>
+                </select>
+
+                <label class="userInput highSpace" for="number-select">Number of Rooms</label> <select name="number"
+                    id="number-select">
+                    <option value="">Select Number of Rooms...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    
+                </select>
+
+                <label class="userInput highSpace" for="start">Start Date:</label>
+
+                <input type="date" id="start" name="trip-start" min="2019-04-06">
+                <label class="userInput highSpace" for="end">End Date:</label>
+                <input type="date" id="end" name="trip-end" min="2019-04-07">
+
+                <label class="userInput">Special Requests or Comments</label><textarea name="comments"
+                    class="comments"></textarea>
+                <button class="formButton" type="submit" name="submit">Reserve Room</button>
+            </fieldset>
+
+        </form>
+
+
+    </main>
+
+    <footer>
+        <section class="contact">
+            <div class="contactInfo">
+                <h3 class="contactHead">Contact Information</h3>
+
+                <ul>
+                    <li><span class="start">Phone:</span> 555-123-4567</li>
+                    <li><span class="start">Email:</span> contact@templeinn.com</li>
+                    <li><span class="start">Address:</span> 4800 Montgomery Ln #300, Bethesda, MD 20814</li>
+                </ul>
+            </div>
+            <div class="socialMedia">
+                <figure><img src="images/facebook.png" alt="facebook icon"></figure>
+                <figure><img src="images/instagram.png" alt="instagram icon"></figure>
+                <figure><img src="images/twitter.png" alt="twitter icon"></figure>
+            </div>
+        </section>
+        <div class="attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+                title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
+
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/submenu.js"></script>
+
+
+</body>
+
+</html>

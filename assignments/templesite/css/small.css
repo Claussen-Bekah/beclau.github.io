@@ -244,6 +244,8 @@ legend {
     margin-bottom: 0;
 }
 
+
+
 form {
     display: flex;
     flex-flow: column nowrap;
@@ -294,7 +296,7 @@ select, .dateInput, ::placeholder {
  }
 
 input:hover, select:hover, textarea:hover {
-    border: 2px #c6c5b9 solid;
+    border: 2px #635c51 solid;
 }
 
 input:focus, select:focus, textarea:focus {
@@ -303,6 +305,11 @@ input:focus, select:focus, textarea:focus {
 
 form img {
     display: none;
+}
+
+.formButton:hover {
+    background-color: #635c51;
+    color: white;
 }
 
 .thanksPic {

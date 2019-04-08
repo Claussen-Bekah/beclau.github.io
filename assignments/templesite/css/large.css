@@ -191,6 +191,10 @@
         align-self: center;
     }
     
+    .firstLegend {
+        margin-bottom: 20px;
+    }
+
     .thanksPic {
         display: block;
         margin: auto;

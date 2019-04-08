@@ -24,32 +24,54 @@
 </head>
 
 <body>
-    <header>
-        <div class="headerTop">
-            <nav>
-                <button class="menu" onclick="openNav()">&#9776;</button>
-                <div id="primaryNav" class="nav">
-                    <span class="close" onclick="closeNav()">&times;</span>
-                    <a href="index.html">Home</a>
-                    <a href="reservations.html">Reservations</a>
-                    <a href="templeinfo.html">Temple Information</a>
-                    <div class="dropdown">
-                        <a href="#" onclick="openSub()" class="dropbtn">Services &#62;</a>
-                        <div class="dropdown-content">
-                            <div class="hide" id="subNav">
-                                <a href="services.html">Amenities</a>
-                                <a href="receptioncenter.html">Reception Center</a>
-                                <a href="missionaryinfo.html">Full-Time Missionary</a>
+        <header>
+                <div class="headerTop">
+                    <nav>
+                        <div class="smallNav">
+                            <button class="menu" onclick="openNav()">&#9776;</button>
+                            <div id="primaryNav" class="nav">
+                                <span class="close" onclick="closeNav()">&times;</span>
+                                <a href="index.html" class="current extraSpace">Home</a>
+                                <a href="reservations.html">Reservations</a>
+                                <a href="templeinfo.html">Temple Information</a>
+                                <div class="dropdown">
+                                    <a href="#" onclick="openSub()" class="dropbtn">Services &#62;</a>
+                                    <div class="dropdown-content">
+                                        <div class="hide" id="smsubNav">
+                                            <a href="services.html">Amenities</a>
+                                            <a href="receptioncenter.html">Reception Center</a>
+                                            <a href="missionaryinfo.html">Full-Time Missionary</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="contact.html">Contact Us</a>
                             </div>
                         </div>
-                    </div>
-                    <a href="contact.html">Contact Us</a>
+        
+                        <div class="largeNav">
+                            <a href="index.html" class="current">Home</a>
+                            <a href="reservations.html">Reservations</a>
+                            <a href="templeinfo.html">Temple Information</a>
+                            <div class="dropdown">
+                                <a href="#" onclick="openSub()" class="dropbtn">Services &#62;</a>
+                                <div class="dropdown-content">
+                                    <div class="hide" id="lgsubNav">
+                                        <a href="services.html">Amenities</a>
+                                        <a href="receptioncenter.html">Reception Center</a>
+                                        <a href="missionaryinfo.html">Full-Time Missionary</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </nav>
+        
+                    <img src="images/logo.png" class="logo" alt="Temple Inn and Suites Logo">
+                    <h1>Temple Inn & Suites</h1>
+        
                 </div>
-            </nav>
-            <img src="images/logo.png" class="logo" alt="Temple Inn and Suites Logo">
-            <h1>Temple Inn & Suites</h1>
-        </div>
-    </header>
+            </header>
+        
 
     <main>
 

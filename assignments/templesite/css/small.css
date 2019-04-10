@@ -329,6 +329,10 @@ form img {
     width: 100%;
 }
 
+.infoImgs {
+    display: none;
+}
+
 .mainInfo {
     border-collapse: collapse;
     width: 90%;

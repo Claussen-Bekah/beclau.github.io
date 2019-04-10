@@ -221,21 +221,23 @@
         grid-column-gap: 2em;
     }
 
-    .templeInfo {
+    .templeGrid {
         grid-column-start: 1;
     }
 
-    .infoGrid figure {
+    .infoImgs {
         grid-column-start: 3;
+        display: block;
+    }
+
+    .infoImgs figure {
+        margin-bottom: 20px;
     }
 
     .weatherSummary {
         grid-column-start: 2;
     }
 
-    .summaryLink {
-        display: none;
-    }
 
     .infoPara {
         display: inline;
@@ -250,5 +252,6 @@
         font-size: 1em;
     }
 
+   
     
 }

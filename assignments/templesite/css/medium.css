@@ -53,4 +53,26 @@ form {
     fieldset {
         flex-flow: row nowrap;
     }
+
+    .infoGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0;
+    }
+
+    .sminfoImg {
+        display: none;
+    }
+
+    .summaryLink {
+        display: none;
+    }
+
+    .templeGrid {
+        grid-column-start: 1;
+    }
+
+    .weatherSummary {
+        grid-column-start: 2;
+    }
 }

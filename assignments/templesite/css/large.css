@@ -238,6 +238,10 @@
         grid-column-start: 2;
     }
 
+    .sminfoImg {
+        display: none;
+    }
+
 
     .infoPara {
         display: inline;

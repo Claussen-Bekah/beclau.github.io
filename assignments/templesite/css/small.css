@@ -320,6 +320,10 @@ form img {
     color: #dc851f;
 }
 
+.sminfoImg {
+    width: 90%;
+}
+
 .infoGrid figure {
     width: 90%;
     margin: auto;

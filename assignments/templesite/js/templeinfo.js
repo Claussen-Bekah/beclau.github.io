@@ -22,14 +22,18 @@ function showInfo(jsonData) {
 
     for (let i = 0; i < temples.length; i++) {
 
+        var infoDiv = document.createElement('div');
+            infoDiv.setAttribute('class', 'infoDiv');
+            templeInfo.appendChild(infoDiv);
+
             var myH2 = document.createElement('h2');
             myH2.setAttribute('class', 'templeName');
             myH2.textContent = temples[i].name;
-            templeInfo.appendChild(myH2);
+            infoDiv.appendChild(myH2);
 
             var table = document.createElement('table');
             table.setAttribute('class', 'mainInfo');
-            templeInfo.appendChild(table);
+            infoDiv.appendChild(table);
 
             var thead = table.createTHead();
             var tbody = table.createTBody();
@@ -60,9 +64,6 @@ function showInfo(jsonData) {
             cell2.innerHTML = temples[i].telephone;
             cell3.innerHTML = temples[i].services;
 
-            var infoDiv = document.createElement('div');
-            infoDiv.setAttribute('class', 'infoDiv');
-            templeInfo.appendChild(infoDiv);
 
             var myPara1 = document.createElement('p');
             myPara1.textContent = 'History: ';
@@ -99,7 +100,7 @@ function showInfo(jsonData) {
 
             for (let ii = 0; ii < closures.length; ii++) {
                 var mySpan4 = document.createElement('span');
-                mySpan4.setAttribute('class', 'infoPara');
+                mySpan4.setAttribute('class', 'infoPara closures');
                 mySpan4.textContent = closures[ii];
                 myPara4.appendChild(mySpan4);
             }

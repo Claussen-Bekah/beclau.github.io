@@ -214,4 +214,41 @@
         margin: auto;
     }
 
+    .infoGrid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 0;
+        grid-column-gap: 2em;
+    }
+
+    .templeInfo {
+        grid-column-start: 1;
+    }
+
+    .infoGrid figure {
+        grid-column-start: 3;
+    }
+
+    .weatherSummary {
+        grid-column-start: 2;
+    }
+
+    .summaryLink {
+        display: none;
+    }
+
+    .infoPara {
+        display: inline;
+    }
+
+    .closures {
+        display: block;
+    }
+
+    .infoGrid p {
+        margin-bottom: 15px;
+        font-size: 1em;
+    }
+
+    
 }

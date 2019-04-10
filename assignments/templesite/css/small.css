@@ -315,3 +315,82 @@ form img {
 .thanksPic {
     display: none;
 }
+
+.templeName {
+    color: #dc851f;
+}
+
+.infoGrid figure {
+    width: 90%;
+    margin: auto;
+}
+
+.infoGrid figure img {
+    width: 100%;
+}
+
+.mainInfo {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+
+.infoGrid table {
+    margin-bottom: 20px;
+}
+
+.mainInfo thead {
+    background-color: #635c51;
+    color: white;
+}
+
+.mainInfo tbody {
+    background-color: #dfded3;
+}
+
+.mainInfo th, td {
+    text-align: center;
+    padding: 10px;
+    font-family: Vollkorn, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 1em;
+    border: 1px white solid;
+}
+
+h4 {
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #635c51;
+    padding: 20px;
+    text-align: center;
+}
+
+.infoDiv p {
+    font-weight: 100;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    color: #dc851f;
+}
+
+.infoPara {
+    display: block;
+    font-size: 1em;
+    font-family: Vollkorn, 'Times New Roman', Times, serif;
+    margin: 15px 0;
+    color: #635c51;
+}
+
+.infoGrid p {
+    text-align: center;
+}
+
+.infoGrid a {
+    text-decoration: none;
+    font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+    color: #9ec2bd;
+    font-size: 1em;
+    background-color: #f1f1f1;
+    padding: 10px;
+}

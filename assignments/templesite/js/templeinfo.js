@@ -14,51 +14,104 @@ request.onload = function() {
 
 function showInfo(jsonData) {
 
+
+
+
     var templeInfo = document.getElementById('templeInfo');
     var temples = jsonData['temples'];
 
-    for (var i = 0; i < temples.length; i++) {
+    for (let i = 0; i < temples.length; i++) {
 
             var myH2 = document.createElement('h2');
+            myH2.setAttribute('class', 'templeName');
             myH2.textContent = temples[i].name;
             templeInfo.appendChild(myH2);
-       
+
             var table = document.createElement('table');
             table.setAttribute('class', 'mainInfo');
             templeInfo.appendChild(table);
 
-            var thead = document.createElement('thead');
-            table.appendChild(thead);
+            var thead = table.createTHead();
+            var tbody = table.createTBody();
 
-            var row2 = table.insertRow(0);
-            
+            var row1 = thead.insertRow(0);
+            row1.setAttribute('class','toprow');
+
+            var row2 = tbody.insertRow(0);
+
+            var th1 = document.createElement('th');
+            th1.textContent = 'Address:'
+            row1.appendChild(th1);
+
+            var th2 = document.createElement('th');
+            th2.textContent = 'Telephone:'
+            row1.appendChild(th2);
+
+            var th3 = document.createElement('th');
+            th3.textContent = 'Services:'
+            row1.appendChild(th3);
+
             cell1 = row2.insertCell(0);
             cell2 = row2.insertCell(1);
             cell3 = row2.insertCell(2);
-            cell4 = row2.insertCell(3);
-            cell5 = row2.insertCell(4);
-            cell6 = row2.insertCell(5);
-            cell7 = row2.insertCell(6);
+           
 
             cell1.innerHTML = temples[i].address;
             cell2.innerHTML = temples[i].telephone;
             cell3.innerHTML = temples[i].services;
-            cell4.innerHTML = temples[i].history;
-            cell5.innerHTML = temples[i].object['ordinance schedule'];
-            cell6.innerHTML = temples[i].address;
-            cell7.innerHTML = temples[i].address;
 
+            var infoDiv = document.createElement('div');
+            infoDiv.setAttribute('class', 'infoDiv');
+            templeInfo.appendChild(infoDiv);
+
+            var myPara1 = document.createElement('p');
+            myPara1.textContent = 'History: ';
+            infoDiv.appendChild(myPara1);
+
+            var myPara2 = document.createElement('p');
+            myPara2.textContent = 'Ordinance Schedule: ';
+            infoDiv.appendChild(myPara2);
+
+            var myPara3 = document.createElement('p');
+            myPara3.textContent = 'Session Schedule: ';
+            infoDiv.appendChild(myPara3);
+
+            var mySpan1 = document.createElement('span');
+            mySpan1.textContent = temples[i].history;
+            mySpan1.setAttribute('class', 'infoPara');
+            myPara1.appendChild(mySpan1);
+
+            var mySpan2 = document.createElement('span');
+            mySpan2.textContent = temples[i].ordinanceSchedule;
+            mySpan2.setAttribute('class', 'infoPara');
+            myPara2.appendChild(mySpan2);
+
+            var mySpan3 = document.createElement('span');
+            mySpan3.textContent = temples[i].sessionSchedule;
+            mySpan3.setAttribute('class', 'infoPara');
+            myPara3.appendChild(mySpan3);
+
+            var myPara4 = document.createElement('p');
+            myPara4.textContent = 'Temple Closures:'
+            infoDiv.appendChild(myPara4);
             
+            var closures = temples[i].templeClosures;
 
-
-
-
+            for (let ii = 0; ii < closures.length; ii++) {
+                var mySpan4 = document.createElement('span');
+                mySpan4.setAttribute('class', 'infoPara');
+                mySpan4.textContent = closures[ii];
+                myPara4.appendChild(mySpan4);
+            }
             
+            
+           
+
         }
 
     }
 
-    
+
 
 
 

@@ -36,8 +36,7 @@
     }
 
     .row1 figure {
-        width: 90%;
-        margin-top: 1em;
+        margin: 1em 0;
     }
 
     .row3 {
@@ -160,7 +159,6 @@
         grid-template-rows: .5fr .5fr .5fr .5fr;
         width: 80%;
         margin: auto;
-        align-content: center;
     }
 
     h3 {
@@ -183,12 +181,10 @@
     form figure img {
         margin: 10px ;
         display: block;
-        width: 100%;
     }
 
     form figure {
         width: 30%;
-        align-self: center;
     }
     
     .firstLegend {
@@ -256,6 +252,21 @@
         font-size: 1em;
     }
 
+    .servicesGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .serviceImgs {
+        display: flex;
+        grid-column: 1 / span 2;
+    }
    
+    .thanks figure {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+  
     
 }

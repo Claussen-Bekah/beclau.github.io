@@ -41,6 +41,7 @@ h1 {
     background-color:white;
     color: #b2d8d3;
 }
+
 .extraSpace {
 margin-top: 20px;
 }
@@ -88,15 +89,6 @@ margin-top: 20px;
     right: 25px;
     font-size: 4em;
     margin-left: 50px;
-}
-
-.row1 figure {
-    width: 100%;
-    margin: auto;
-}
-
-.row1 figure img {
-    width: 100%;
 }
 
 .row1 {
@@ -324,13 +316,19 @@ form img {
     width: 90%;
 }
 
-.infoGrid figure {
+figure {
     width: 90%;
     margin: auto;
 }
 
-.infoGrid figure img {
+figure img {
     width: 100%;
+}
+
+figcaption {
+    font-family: Vollkorn, 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 .infoImgs {
@@ -402,3 +400,25 @@ h4 {
     background-color: #f1f1f1;
     padding: 10px;
 }
+
+.servicesGrid ul li {
+    font-family: Vollkorn, 'Times New Roman', Times, serif;
+    color: #635c51;
+    padding: 10px;
+}
+
+[type=radio] {
+    width: auto;
+    margin: 0;
+}
+
+.lessSpace {
+    margin: 10px 10px 0 0;
+    font-family: Vollkorn, 'Times New Roman', Times, serif;
+    color: #635c51;
+}
+
+.missionContact {
+    margin: auto;
+}
+

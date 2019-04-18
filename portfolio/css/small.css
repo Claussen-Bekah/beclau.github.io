@@ -1,0 +1,53 @@
+h1 {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #808080;
+    font-weight: 100;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2em;
+    color:#696969;
+    font-style: italic;
+}
+
+a:hover {
+    color: #E97F14;
+}
+
+.logoLink:hover {
+    border: #808080 2px solid;
+
+}
+
+.logos {
+    margin: auto;
+    padding: 30px;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+img {
+    border-radius: 50%;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}

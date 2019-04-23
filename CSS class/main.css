@@ -6,7 +6,8 @@ body {
     padding: 0;
 }
 
-header, section {
+header,
+section {
     overflow: auto;
 }
 
@@ -57,7 +58,7 @@ ul li a {
     color: #faebd7;
     text-decoration: none;
     font-family: Helvetica, Arial, sans-serif;
-   
+
 }
 
 a:active {
@@ -115,12 +116,25 @@ article {
     background-color: white;
     margin: 20px;
     padding: 20px;
-    box-shadow:  5px 5px 10px lightgray;
+    box-shadow: 5px 5px 10px lightgray;
 }
 
 @media only screen and (min-width:992px) {
-    body {
+    div {
         display: grid;
         grid-template-columns: 1fr 3fr;
+    }
+
+    article {
+        margin: 50px;
+        padding: 50px;
+    }
+
+    header {
+        padding-top: 60px;
+    }
+
+    h2 {
+        font-size: 2em;
     }
 }

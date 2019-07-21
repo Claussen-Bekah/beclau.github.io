@@ -1,0 +1,90 @@
+/* -------------------------------- 
+
+xButtons 
+
+-------------------------------- */
+
+.btn {
+    border: none;
+    box-shadow: none;
+    border-radius: 1em;
+    font: {
+      size: 1.4rem;
+      family: $secondary-font;
+    }
+    color: $color-5;
+    padding: 0.6em 2.2em;
+    cursor: pointer;
+    background: $color-1;
+  
+    &:focus {
+      outline: none;
+    }
+  
+    .no-touch &:hover {
+      background: lighten($color-1, 5%);
+      cursor: pointer; 
+    }
+  
+    &.btn-success {
+      background: $success;
+      color: $color-4;
+      .no-touch &:hover {
+        background: lighten($success, 5%);
+        cursor: pointer; 
+      }
+    }
+  
+    &.btn-alert {
+      background: $alert;
+  
+      .no-touch &:hover {
+        background: lighten($alert, 5%);
+        cursor: pointer; 
+      }
+    }
+  
+    &.btn-outline {
+      color: $color-5;
+      background: transparent;
+      box-shadow: inset 0 0 0 1px $color-1;
+  
+      .no-touch &:hover {
+        color: $color-5;
+        background: $color-1;
+        cursor: pointer; 
+      }
+    }
+  
+    @include MQ(S) {
+      font-size: 1.6rem;
+    }
+  }
+  
+  .cd-buttons .cd-box:nth-of-type(2) span {
+    /* CSS class name color */
+    color: $color-1;
+  }
+  
+  .cd-buttons {
+	.cd-box:first-of-type {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.cd-box:last-of-type {
+		margin-top: -1px;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+	}
+
+	button {
+		margin: .4em;
+	}
+
+	@include MQ(M) {
+		button {
+			margin: 1em;
+		}
+	}
+}

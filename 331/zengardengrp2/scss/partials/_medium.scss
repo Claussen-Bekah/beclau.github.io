@@ -1,0 +1,172 @@
+@include MQ(M) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 230px 400px;
+    grid-row-gap: 9px;
+    align-items: center;
+  }
+
+  footer::after {
+    content: url(SVG/seeds.svg);
+    width: 250px;
+    position: absolute;
+    top: 650px;
+    left: 50px;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-column: 1/span 2;
+    grid-row-start: 1;
+    grid-template-rows: 0.1fr 0.1fr;
+    position: absolute;
+  }
+
+  .intro header {
+    grid-column: 1/span 3;
+    grid-row-start: 1;
+    display: flex;
+    width: 333px;
+  }
+
+  .supporting {
+    margin-top: 0px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    align-self: stretch;
+    width: 333px;
+  }
+
+  .summary {
+    grid-column-start: 2;
+    grid-row: 1/span 1;
+    width: 100%;
+    justify-self: end;
+  }
+
+  h2 {
+    grid-column-start: 2;
+    grid-row: 2/span 1;
+  }
+
+  .sidebar {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-self: stretch;
+    width: 50%;
+    justify-self: end;
+    margin-top: -114px;
+  }
+
+  .preamble {
+    margin-bottom: 30px;
+    width: 293px;
+  }
+
+  .preamble h3:active~p,
+  .explanation h3:active~p,
+  .participation h3:active~p,
+  .benefits h3:active~p,
+  .requirements h3:active~p {
+    display: block;
+    background-color: pink;
+    position: inherit;
+    font-size: 1em;
+    width: 120%;
+    padding: 10px;
+    -webkit-animation-name: textblend;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: textblend;
+    animation-duration: 1s;
+  }
+
+  .preamble h3:active~p {
+    transform: translate(30vw, -70px);
+  }
+
+  .explanation h3:active~p {
+    transform: translate(30vw, -135px);
+  }
+
+  .participation h3:active~p {
+    transform: translate(30vw, -225px);
+  }
+
+  .benefits h3:active~p {
+    transform: translate(30vw, -305px);
+  }
+
+  .requirements h3:active~p {
+    transform: translate(30vw, -395px);
+  }
+
+  @-webkit-keyframes textblend {
+    from {
+      background-color: white;
+    }
+
+    to {
+      background-color: pink;
+    }
+  }
+
+  /* Standard syntax */
+  @keyframes textblend {
+    from {
+      background-color: white;
+    }
+
+    to {
+      background-color: pink;
+    }
+  }
+
+  .requirements:hover,
+  .benefits:hover,
+  .participation:hover,
+  .explanation:hover,
+  .preamble:hover {
+    cursor: pointer;
+  }
+
+  .requirements h3:hover,
+  .benefits h3:hover,
+  .participation h3:hover,
+  .explanation h3:hover,
+  .preamble h3:hover {
+    cursor: pointer;
+    -webkit-animation-name: menublend;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: menublend;
+    animation-duration: 1s;
+    background-color: #005c48;
+  }
+
+  @-webkit-keyframes menublend {
+    from {
+      background-color: #019678;
+    }
+
+    to {
+      background-color: #005c48;
+    }
+  }
+
+  /* Standard syntax */
+  @keyframes menublend {
+    from {
+      background-color: #019678;
+    }
+
+    to {
+      background-color: #005c48;
+    }
+  }
+
+}

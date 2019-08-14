@@ -1,0 +1,58 @@
+body {
+    width: 400px;
+}
+
+
+td {
+    text-align: center;
+}
+
+table {
+    font-family: Ubuntu, sans-serif;
+    box-shadow: 5px 5px 20px #628ca6;
+}
+
+tr:first-child  th{
+    font-size: 1.4em;
+    background-color: #7fb9c2;
+    padding: .4em;
+}
+
+tr:nth-child(5) td:first-child {
+    font-style: italic;
+}
+
+tr:nth-child(odd) {
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(even) {
+    background-color: #e7ffed;
+}
+
+tbody td {
+    padding: .4em;
+}
+
+table, th, td, tfoot {
+    border: 1px solid #b3bbb8;
+    border-collapse: collapse;
+}
+
+tr:nth-child(2) th {
+    background-color: #628ca6;
+    padding: .4em;
+    color: #ffffff;
+}
+
+tfoot td {
+    padding: .8em;
+    font-size: .6em;
+    background-color: #7fb9c2;
+}
+
+#special {
+    background-color: #628ca6;
+    color: #ffffff;
+}
+

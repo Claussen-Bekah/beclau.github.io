@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temple Information | Temple Inn & Suites | Plan your upcoming temple trip with us</title>
+    <meta name="description"
+        content="Information for the four temples that currently have a nearby Temple Inn & Suites facility: Tijuana, Mexico; Copenhagen, Denmark; Melbourne, Australia; and Cebu City, Phillipines">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/small.css">
+
+    <link rel="stylesheet" href="css/medium.css">
+
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans%7CVollkorn">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="headerTop">
+            <nav>
+                <div class="smallNav">
+                    <button class="menu" onclick="openNav()">&#9776;</button>
+                    <div id="primaryNav" class="nav">
+                        <span class="close" onclick="closeNav()">&times;</span>
+                        <a href="index.html" class="extraSpace">Home</a>
+                        <a href="reservations.html">Reservations</a>
+                        <a href="templeinfo.html" class="current">Temple Information</a>
+                        <div class="dropdown">
+                            <a href="#" onclick="openSub()" class="dropbtn">Services &#62;</a>
+                            <div class="dropdown-content">
+                                <div class="hide" id="smsubNav">
+                                    <a href="services.html">Amenities</a>
+                                    <a href="receptioncenter.html">Reception Center</a>
+                                    <a href="missionaryinfo.html">Full-Time Missionary</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="largeNav">
+                    <a href="index.html">Home</a>
+                    <a href="reservations.html">Reservations</a>
+                    <a href="templeinfo.html" class="current">Temple Information</a>
+                    <div class="dropdown">
+                        <a href="#" onclick="openSub()" class="dropbtn">Services &#62;</a>
+                        <div class="dropdown-content">
+                            <div class="hide" id="lgsubNav">
+                                <a href="services.html">Amenities</a>
+                                <a href="receptioncenter.html">Reception Center</a>
+                                <a href="missionaryinfo.html">Full-Time Missionary</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </nav>
+
+            <img src="images/logo.png" class="logo" alt="Temple Inn and Suites Logo">
+            <h1>Temple Inn & Suites</h1>
+
+        </div>
+    </header>
+
+    <main>
+
+            <h2>Temple Information</h2>
+            
+        
+        <div class="infoGrid">
+                <figure class="sminfoImg infoImg">
+                        <img src="images/celestial-room.jpg" alt="Interior of celestial room in the Tijuana Mexico temple">
+                </figure>   
+               <p> <a class="summaryLink" href="#weatherSummary">Jump to Weather Summary</a>  </p>  
+                
+            <div class="infoImgs">
+                <figure class="infoImg">
+                        <img src="images/celestial-room.jpg" alt="Interior of celestial room in the Tijuana Mexico temple">
+                </figure>
+                <figure class="infoImg">
+                        <img src="images/tijuana-mexico-temple.jpg" alt="Exterior of the Tijuana Mexico temple">
+                </figure>
+                <figure class="infoImg">
+                        <img src="images/copenhagen-wide.jpg" alt="Wide exterior shot of the Copenhagen Denmark temple with grounds visible">
+                </figure>
+                <figure class="infoImg">
+                        <img src="images/philippines-cebu.jpg" alt="Exterior of the Cebu City, Phillipines temple">
+                </figure>
+            </div>
+            <div id="templeInfo" class="templeGrid">
+            </div>
+            
+            <div id="weatherSummary">
+                    <h2 class="templeName">Weather Summary</h2>
+            </div>
+
+
+        </div>
+
+    
+
+
+    </main>
+
+    <footer>
+        <section class="contact">
+            <div class="contactInfo">
+                <h3 class="contactHead">Contact Information</h3>
+
+                <ul>
+                    <li><span class="start">Phone:</span> 555-123-4567</li>
+                    <li><span class="start">Email:</span> contact@templeinn.com</li>
+                    <li><span class="start">Address:</span> 4800 Montgomery Ln #300, Bethesda, MD 20814</li>
+                </ul>
+            </div>
+            <div class="socialMedia">
+                <figure><img src="images/facebook.png" alt="facebook icon"></figure>
+                <figure><img src="images/instagram.png" alt="instagram icon"></figure>
+                <figure><img src="images/twitter.png" alt="twitter icon"></figure>
+            </div>
+        </section>
+        <div class="attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+                title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
+
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/submenu.js"></script>
+    <script src="js/templeinfo.js"></script>
+    <script src="js/weathersummary.js"></script>
+    <script src="js/windchill.js"></script>
+
+</body>
+
+</html>

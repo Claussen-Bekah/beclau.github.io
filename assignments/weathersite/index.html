@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Gem State Weather | Your source for Idaho weather updates</title>
+    <meta name="description"
+        content="See pertinent weather and town info for Preston, Soda Springs, and Fish Haven on Gem State Weather, southeast Idaho's premier meteorology hub">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/small.css">
+
+    <link rel="stylesheet" href="css/medium.css">
+
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville%7CMirza%7CNunito%7CPatua+One">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" class="logo" alt="cloud and sun">
+
+        <div class="heading">
+            <h1 class="site-name">GEM STATE WEATHER</h1>
+
+            <div class="motto">No matter the weather, we'll be here to let you know</div>
+        </div>
+    </header>
+
+    <nav>
+        <button class="menu" onclick="toggleMenu()">&#9776; Menu</button>
+
+        <div class="navflex">
+            <ul id="primaryNav" class="hide">
+
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <h2>Home</h2>
+
+        <figure class="homeimg">
+            <img src="images/sheep.jpg" alt="barn and other farm buildings">
+        </figure>
+
+
+        <div id="townInfo" class="homeGrid">
+
+            <!-- This is where the three towns info is being added using JS -->
+
+        </div>
+
+        <article class="preview">
+
+            <div class="articleGroup">
+
+                <div class="articleContent">
+
+                    <div class="article-item">
+                        <h3 class="articleHeading">Whatever the Weather</h3>
+                        <h4>By Rancher Bob</h4>
+                    </div>
+
+                        <p>We ranchers pride ourselves on adapting. No matter what, no matter the weather, no matter our
+                            health, we need to be out and with our livestock. Our livestock means everything to us.
+                            Fortunately, we also have a big network of friends, family, and neighbors who are willing to
+                            pitch in when we need it. One such neighbor is Mark McCallum of Fish Haven. McCallum is one
+                            of the best and busiest ranchers around and most of you probably know him. In spite of his
+                            busy schedule and large herd, Mark is always willing to step out and help a neighbor in
+                            need.
+                        </p>
+                        <p>At the end of March, Fish Haven experienced a terrible storm. With massive gusts and sheets
+                            of rain, it was hard to walk outside to get the garbage can, let alone be in the pasture
+                            herding cows. Thanks to Gem State Weather, Mark was able to track the storm's progress and
+                            saw that it was going to affect his neighbor's cows, who he could see didn't have adequate
+                            shelter. Mark's neighbors were stuck in Logan after heading down for what was supposed to be
+                            a quick trip, but weren't able to come back up because of the sudden storm.</p>
+                        <a href="#">Continue reading...</a>
+
+                </div>
+
+                    <figure class="previewimg">
+                        <img src="images/cows.jpg" alt="cows" class="previewhome">
+                    </figure>
+            </div>
+
+        </article>
+
+
+    </main>
+
+    <footer>
+
+        <div class="contact">
+
+            <div class="contact-info">
+
+                <h5 class="white">
+                    Contact Information
+                </h5>
+
+                <p class="type white">Phone: <span class="input">(208) 555-5555</span></p>
+                <p class="type white">Email: <span class="input">gemstateweather@email.com</span></p>
+                <p class="type white">Address: <span class="input">123 Main St Preston, ID 83263</span></p>
+
+
+                <div class="social-media">
+                    <img src="images/facebook.png" alt="facebook logo">
+                    <img src="images/insta.png" alt="instagram logo">
+                    <img src="images/youtube.png" alt="youtube logo">
+                </div>
+
+            </div>
+
+            <figure class="map">
+                <a href="https://goo.gl/maps/1Qda5VinDj42" target="_blank">
+                    <img src="images/map.png" alt="map snippet">
+                </a>
+            </figure>
+
+        </div>
+
+
+
+        <div class="terms">
+
+            <div class="copyright">&copy; 2019 Gem State Weather | <a href="#" target="_blank">Terms of Use</a> | Bekah
+                Claussen</div>
+
+            <span id="currentDate"></span>
+
+        </div>
+
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/towninfo.js"></script>
+
+</body>
+
+</html>

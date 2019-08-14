@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Mirza|Nunito|Patua+One');
+
+body{
+    margin: auto;
+    width: 550px;
+}
+
+.bodyimage {
+    width: 100%;
+    height: auto;
+}
+
+.logo, .site-name {
+    display: inline-block;
+	vertical-align: middle;
+}
+
+header {
+    background-color: #456990;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.site-name {
+    font-family: "Patua One", "Big Caslon", Cambria, serif;
+    font-size: 2.5em;
+    color: #ffffff;
+    font-weight: 100;
+    margin-bottom: -20px;
+}
+
+.motto {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+    color: #dfd9e2;
+    text-align: center;
+    margin-top: -25px;
+    margin-left: 150px;
+    font-style: oblique;
+}
+
+nav {
+    margin-top: -16px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #dfd9e2;
+    text-align: center;
+}
+
+nav ul li {
+    padding: 10px;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color: #3f4743;
+    font-size: 1.6em;
+}
+
+nav ul li a {
+    color: #3f4743;
+    text-decoration: none;
+}
+
+.current {
+   background-color: #b0acb3;
+}
+
+
+
+
+

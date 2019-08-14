@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery | Gem State Weather </title>
+    <meta name="description"
+        content="Southeast Idaho gallery of past weather conditions, local events, and other weather- and scenery-related images">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/small.css">
+
+    <link rel="stylesheet" href="css/medium.css">
+
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville%7CMirza%7CNunito%7CPatua+One">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" class="logo" alt="cloud and sun">
+
+        <div class="heading">
+            <h1 class="site-name">GEM STATE WEATHER</h1>
+
+            <div class="motto">No matter the weather, we'll be here to let you know</div>
+        </div>
+    </header>
+
+    <nav>
+        <button class="menu" onclick="toggleMenu()">&#9776; Menu</button>
+
+        <div class="navflex">
+            <ul id="primaryNav" class="hide">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html" class="current">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="gallery">
+            <figure>
+                <img src="images/sunrise.jpg" alt="There's nothing better than waking up to this view of Scout Mountain"
+                    class="myImage">
+                <figcaption>There's nothing better than waking up to this view of Scout Mountain</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/winter.jpg" alt="Winter in Soda Springs" class="myImage">
+                <figcaption>Winter in Soda Springs</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/snow.jpg" alt="Snow fall just outside of Preston" class="myImage">
+                <figcaption>Snow fall just outside of Preston</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/summerbiking.jpg" alt="Summer is a great time to get out and get active"
+                    class="myImage">
+                <figcaption>Summer is a great time to get out and get active</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/clouds.jpg" alt="Beautiful misty mountains make for an impressive view"
+                    class="myImage">
+                <figcaption>Beautiful misty mountains make for an impressive view</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/sunmountains.jpg" alt="Fish Haven in the summer = paradise" class="myImage">
+                <figcaption>Fish Haven in the summer = paradise</figcaption>
+            </figure>
+        </div>
+
+
+        <div id="myModal" class="modal">
+
+            <span class="close">&times;</span>
+
+            <img class="modal-content" id="img01" alt="modal image">
+
+            <div id="caption"></div>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="contact">
+
+            <div class="contact-info">
+                <h5 class="white">
+                    Contact Information
+                </h5>
+
+                <p class="type white">Phone: <span class="input">(208) 555-5555</span></p>
+                <p class="type white">Email: <span class="input">gemstateweather@email.com</span></p>
+                <p class="type white">Address: <span class="input">123 Main St Preston, ID 83263</span></p>
+
+
+                <div class="social-media">
+                    <img src="images/facebook.png" alt="facebook logo">
+                    <img src="images/insta.png" alt="instagram logo">
+                    <img src="images/youtube.png" alt="youtube logo">
+                </div>
+
+            </div>
+
+            <figure class="map">
+                <a href="https://goo.gl/maps/1Qda5VinDj42" target="_blank">
+                    <img src="images/map.png" alt="map snippet">
+                </a>
+            </figure>
+
+        </div>
+
+        <div class="terms">
+
+            <div class="copyright">&copy; 2019 Gem State Weather |<a href="#" target="_blank">Terms of Use</a> | Bekah
+                Claussen</div>
+
+            <span id="currentDate"></span>
+
+        </div>
+
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/modal.js"></script>
+
+</body>
+
+</html>

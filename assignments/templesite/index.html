@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Temple Inn & Suites | Plan your upcoming temple trip with us</title>
+    <meta name="description"
+        content="Home page for Temple Inn & Suites: plan an easy, stress-free temple trip to any of our temple sites and focus on ordinances, rather than logistics">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/small.css">
+
+    <link rel="stylesheet" href="css/medium.css">
+
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans%7CVollkorn">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="headerTop">
+            <nav>
+                <div class="smallNav">
+                    <button class="menu" onclick="openNav()">&#9776;</button>
+                    <div id="primaryNav" class="nav">
+                        <span class="close" onclick="closeNav()">&times;</span>
+                        <a href="index.html" class="current extraSpace">Home</a>
+                        <a href="reservations.html">Reservations</a>
+                        <a href="templeinfo.html">Temple Information</a>
+                        <div class="dropdown">
+                            <a href="#" onclick="openSub()" class="dropbtn">Services &#62;</a>
+                            <div class="dropdown-content">
+                                <div class="hide" id="smsubNav">
+                                    <a href="services.html">Amenities</a>
+                                    <a href="receptioncenter.html">Reception Center</a>
+                                    <a href="missionaryinfo.html">Full-Time Missionary</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="largeNav">
+                    <a href="index.html" class="current">Home</a>
+                    <a href="reservations.html">Reservations</a>
+                    <a href="templeinfo.html">Temple Information</a>
+                    <div class="dropdown">
+                        <a href="#" onclick="openSub()" class="dropbtn">Services &#62;</a>
+                        <div class="dropdown-content">
+                            <div class="hide" id="lgsubNav">
+                                <a href="services.html">Amenities</a>
+                                <a href="receptioncenter.html">Reception Center</a>
+                                <a href="missionaryinfo.html">Full-Time Missionary</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </nav>
+
+            <img src="images/logo.png" class="logo" alt="Temple Inn and Suites Logo">
+            <h1>Temple Inn & Suites</h1>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="homeGrid">
+
+            <div class="row1">
+                <figure>
+                    <img src="images/row1.jpg" alt="Tijuana, Mexico temple" sizes="100vw" srcset="images/row1-800.jpg 800w,
+                images/row1.jpg 1160w">
+                </figure>
+                <button class="reserveBtn" onclick="window.open('reservations.html','_blank')" type="button">Reserve
+                    Now</button>
+            </div>
+            <div class="smallRow2 largeRow4">
+                <div class="row2column1">
+                    <h2 class="row2Head">Copenhagen, Denmark Temple</h2>
+                    <p class="subheading">Information for your stay</p>
+                    <div class="weatherSummary">
+                        <p>Currently: <span id="currentOutput"></span></p>
+                        <p>Temperature: <span id="tempOutput"></span></p>
+                        <p>Windspeed: <span id="speedOutput"></span></p>
+                        <p>Wind Chill: <span id="windOutput"></span></p>
+                        <p>Humidity: <span id="humidOutput"></span></p>
+                    </div>
+                </div>
+                <div class="row2column2">
+                    <figure class="summaryPic">
+                        <img src="images/copenhagen-denmark.jpg" alt="Copenhagen, Denmark temple">
+                    </figure>
+                </div>
+            </div>
+            <div class="row3">
+                <h2>Amenities</h2>
+                <div class="amenityIcons">
+                    <figure><img src="images/swimming.png" alt="figure swimming">
+                        <figcaption>Swimming Pool</figcaption>
+                    </figure>
+                    <figure><img src="images/wifi.png" alt="wifi available icon">
+                        <figcaption>WiFi</figcaption>
+                    </figure>
+                    <figure><img src="images/rings.png" alt="two wedding rings interlocked">
+                        <figcaption>Reception Center</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="largeRow2">
+                <figure><img src="images/moroni.jpg" alt="Angel Moroni with trumpet on temple spire"></figure>
+                <div class="row2column2">
+                    <h2>Temple Inn & Suites</h2>
+                    <p>Temple Inn & Suites is the premier temple accomodation company. With thoughtful touches like
+                        low-cost
+                        childcare and complimentary temple shuttle, attending the temple has never been easier! Book now
+                        for
+                        a vacation you'll never forget &mdash; your ancestors will thank you!</p>
+                    <p>Available in the following cities:</p>
+                    <ul>
+                        <li>Cebu City, Phillipines</li>
+                        <li>Tijuana, Mexico</li>
+                        <li>Copenhagen, Denmark</li>
+                        <li>Melbourne, Australia</li>
+                    </ul>
+                    <button class="secondBtn" onclick="window.open('reservations.html','_blank')" type="button">Reserve
+                        Now</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <section class="contact">
+            <div class="contactInfo">
+                <h3 class="contactHead">Contact Information</h3>
+
+                <ul>
+                    <li><span class="start">Phone:</span> 555-123-4567</li>
+                    <li><span class="start">Email:</span> contact@templeinn.com</li>
+                    <li><span class="start">Address:</span> 4800 Montgomery Ln #300, Bethesda, MD 20814</li>
+                </ul>
+            </div>
+            <div class="socialMedia">
+                <figure><img src="images/facebook.png" alt="facebook icon"></figure>
+                <figure><img src="images/instagram.png" alt="instagram icon"></figure>
+                <figure><img src="images/twitter.png" alt="twitter icon"></figure>
+            </div>
+        </section>
+        <div class="attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+                title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                title="Flaticon">www.flaticon.com</a> is licensed by <a
+                href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
+
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/submenu.js"></script>
+    <script src="js/weatherinfo.js"></script>
+    <script src="js/windchill.js"></script>
+
+</body>
+
+</html>

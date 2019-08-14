@@ -1,0 +1,75 @@
+/*** uncss> filename: ../css/small.css ***/
+h1 {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #808080;
+    font-weight: 100;
+    margin: 0;
+}
+
+a {
+    color:#696969;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-style: italic;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #E97F14;
+}
+
+.logoLink:hover {
+    border: #808080 3px solid;
+}
+
+.logos {
+    margin: auto;
+    padding: 30px;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+img {
+    border-radius: 50%;
+}
+figure {
+    padding: 10px;
+}
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media only screen and (min-width:992px){
+    .logos {
+        align-content: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+} 
+/*** uncss> filename: https://fonts.googleapis.com/css?family=Quicksand ***/
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v9/6xKtdSZaM9iE8KbpRA_hK1QI.ttf) format('truetype');
+}
+

@@ -1,0 +1,40 @@
+@media only screen and (min-width: 768px) {
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    .summary {
+        position: absolute;
+        background-color: white;
+        top: 1em;
+        left: 3em;
+        padding: 1em;
+    }
+    
+    .summary h3 {
+        font-size: 1.8em;
+    }
+
+    .summary ul li {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .contact {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .social-media {
+        align-self: flex-end;
+    }
+        
+    }

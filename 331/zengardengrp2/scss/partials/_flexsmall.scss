@@ -1,0 +1,146 @@
+@include MQ(S) {
+
+  .pagewrapper {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  h3~p {
+    display: block;
+    color: black;
+  }
+
+  h2 {
+    width: 50%;
+    margin: auto;
+    margin-left: 25px;
+  }
+
+  /*Add the SVG*/
+  .summary::before {
+    content: url(SVG/seeds.svg);
+    width: 30%;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+  }
+
+  .sidebar {
+    margin-left: 15px;
+  }
+
+  .design-selection {
+    border-radius: 10px;
+  }
+
+  .supporting {
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+  .preamble {
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+
+  .participation,
+  .benefits,
+  .requirements,
+  .explanation {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+  }
+
+  .preamble p,
+  .requirements p,
+  .explanation p,
+  .participation p,
+  .benefits p {
+    display: none;
+  }
+
+  .benefits h3:active~p,
+  .requirements h3:active~p,
+  .participation h3:active~p,
+  .explanation h3:active~p,
+  .preamble h3:active~p {
+    margin-top: 10px;
+    border-radius: 10px;
+    display: block;
+    background-color: pink;
+    -webkit-animation-name: textblend;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: textblend;
+    animation-duration: 1s;
+  }
+
+  .requirements h3:hover,
+  .benefits h3:hover,
+  .participation h3:hover,
+  .explanation h3:hover,
+  .preamble h3:hover {
+    cursor: pointer;
+    -webkit-animation-name: menublend;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: menublend;
+    animation-duration: 1s;
+    background-color: #005c48;
+  }
+
+  p a {
+    color: black;
+  }
+
+  /*ANIMATIONS*/
+  /* Animation change of color for text */
+  @-webkit-keyframes textblend {
+    from {
+      background-color: white;
+    }
+
+    to {
+      background-color: pink;
+    }
+  }
+
+  /* Standard syntax */
+  @keyframes textblend {
+    from {
+      background-color: white;
+    }
+
+    to {
+      background-color: pink;
+    }
+  }
+
+  /* Animation change of color for nav menu */
+  @-webkit-keyframes menublend {
+    from {
+      background-color: #019678;
+    }
+
+    to {
+      background-color: #005c48;
+    }
+  }
+
+  /* Standard syntax */
+  @keyframes menublend {
+    from {
+      background-color: #019678;
+    }
+
+    to {
+      background-color: #005c48;
+    }
+  }
+}

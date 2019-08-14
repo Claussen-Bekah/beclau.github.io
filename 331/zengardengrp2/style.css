@@ -1,0 +1,806 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.preamble p, .requirements p, .explanation p, .participation p, .benefits p {
+  display: none;
+}
+
+.intro {
+  left: 0px;
+  top: 0px;
+}
+
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+.design-selection {
+  background: #ef353e;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  margin-top: 40px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+.design-selection li a {
+  color: white;
+  margin: 10px;
+}
+
+.design-name {
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  display: block;
+}
+
+.designer-name {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.design-archives, .zen-resources {
+  padding: 20px;
+  text-align: left;
+  padding: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+.design-archives li a, .zen-resources li a {
+  color: #005c48;
+  padding: 10px;
+}
+
+/* -------------------------------- 
+
+xButtons 
+
+-------------------------------- */
+.btn {
+  border: none;
+  box-shadow: none;
+  border-radius: 1em;
+  font-size: 1.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  padding: 0.6em 2.2em;
+  cursor: pointer;
+  background: #ef353e;
+}
+.btn:focus {
+  outline: none;
+}
+.no-touch .btn:hover {
+  background: #f14d55;
+  cursor: pointer;
+}
+.btn.btn-success {
+  background: #7de4d1;
+  color: #019678;
+}
+.no-touch .btn.btn-success:hover {
+  background: #92e8d8;
+  cursor: pointer;
+}
+.btn.btn-alert {
+  background: #007b61;
+}
+.no-touch .btn.btn-alert:hover {
+  background: #009575;
+  cursor: pointer;
+}
+.btn.btn-outline {
+  color: white;
+  background: transparent;
+  box-shadow: inset 0 0 0 1px #ef353e;
+}
+.no-touch .btn.btn-outline:hover {
+  color: white;
+  background: #ef353e;
+  cursor: pointer;
+}
+@media only screen and (max-width: 815px) {
+  .btn {
+    font-size: 1.6rem;
+  }
+}
+
+.cd-buttons .cd-box:nth-of-type(2) span {
+  /* CSS class name color */
+  color: #ef353e;
+}
+
+.cd-buttons .cd-box:first-of-type {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.cd-buttons .cd-box:last-of-type {
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.cd-buttons button {
+  margin: 0.4em;
+}
+@media only screen and (min-width: 816px) {
+  .cd-buttons button {
+    margin: 1em;
+  }
+}
+
+#zen-intro h1, .select {
+  background-color: #ef353e;
+  color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+
+#zen-intro h1, .summary, .select {
+  background-color: #ef353e;
+  color: white;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 25px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* -------------------------------- 
+
+xBasic style
+
+-------------------------------- */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Playfair Display", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input, textarea, select {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+}
+
+.participation, .benefits, .requirements, .explanation {
+  padding: 10px;
+  margin: 10px;
+  height: 70px;
+}
+
+.preamble {
+  padding: 0;
+  margin: 20px;
+  margin-bottom: -20px;
+}
+
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  color: white;
+  padding: 30px;
+  background: #7de4d1;
+  margin: 10px 20px 10px 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+}
+
+.intro h3, .main h3 {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  border: none;
+  box-shadow: none;
+  border-radius: 1em;
+  font-size: 1.4rem;
+  font-family: "Josefin Sans", sans-serif;
+  background: #019678;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: white;
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
+}
+p a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer {
+  padding: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+footer a {
+  font-family: "Playfair Display", serif;
+  color: #ef353e;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+footer a:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.design-archives ul li, .design-archives h3, .zen-resources h3, .zen-resources ul li {
+  padding-bottom: 10px;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+@media only screen and (max-width: 815px) {
+  .pagewrapper {
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  h3 ~ p {
+    display: block;
+    color: black;
+  }
+
+  h2 {
+    width: 50%;
+    margin: auto;
+    margin-left: 25px;
+  }
+
+  /*Add the SVG*/
+  .summary::before {
+    content: url(SVG/seeds.svg);
+    width: 30%;
+    position: absolute;
+    top: 10%;
+    left: 60%;
+  }
+
+  .sidebar {
+    margin-left: 15px;
+  }
+
+  .design-selection {
+    border-radius: 10px;
+  }
+
+  .supporting {
+    margin-left: 25px;
+    margin-right: 10px;
+    margin-top: 30px;
+  }
+
+  .preamble {
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+
+  .participation,
+.benefits,
+.requirements,
+.explanation {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+  }
+
+  .preamble p,
+.requirements p,
+.explanation p,
+.participation p,
+.benefits p {
+    display: none;
+  }
+
+  .benefits h3:active ~ p,
+.requirements h3:active ~ p,
+.participation h3:active ~ p,
+.explanation h3:active ~ p,
+.preamble h3:active ~ p {
+    margin-top: 10px;
+    border-radius: 10px;
+    display: block;
+    background-color: pink;
+    -webkit-animation-name: textblend;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: textblend;
+    animation-duration: 1s;
+  }
+
+  .requirements h3:hover,
+.benefits h3:hover,
+.participation h3:hover,
+.explanation h3:hover,
+.preamble h3:hover {
+    cursor: pointer;
+    -webkit-animation-name: menublend;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: menublend;
+    animation-duration: 1s;
+    background-color: #005c48;
+  }
+
+  p a {
+    color: black;
+  }
+
+  /*ANIMATIONS*/
+  /* Animation change of color for text */
+  @-webkit-keyframes textblend {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: pink;
+    }
+  }
+  /* Standard syntax */
+  @keyframes textblend {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: pink;
+    }
+  }
+  /* Animation change of color for nav menu */
+  @-webkit-keyframes menublend {
+    from {
+      background-color: #019678;
+    }
+    to {
+      background-color: #005c48;
+    }
+  }
+  /* Standard syntax */
+  @keyframes menublend {
+    from {
+      background-color: #019678;
+    }
+    to {
+      background-color: #005c48;
+    }
+  }
+}
+@media only screen and (min-width: 816px) {
+  .page-wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 230px 400px;
+    grid-row-gap: 9px;
+    align-items: center;
+  }
+
+  footer::after {
+    content: url(SVG/seeds.svg);
+    width: 250px;
+    position: absolute;
+    top: 650px;
+    left: 50px;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-column: 1/span 2;
+    grid-row-start: 1;
+    grid-template-rows: 0.1fr 0.1fr;
+    position: absolute;
+  }
+
+  .intro header {
+    grid-column: 1/span 3;
+    grid-row-start: 1;
+    display: flex;
+    width: 333px;
+  }
+
+  .supporting {
+    margin-top: 0px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    align-self: stretch;
+    width: 333px;
+  }
+
+  .summary {
+    grid-column-start: 2;
+    grid-row: 1/span 1;
+    width: 100%;
+    justify-self: end;
+  }
+
+  h2 {
+    grid-column-start: 2;
+    grid-row: 2/span 1;
+  }
+
+  .sidebar {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-self: stretch;
+    width: 50%;
+    justify-self: end;
+    margin-top: -114px;
+  }
+
+  .preamble {
+    margin-bottom: 30px;
+    width: 293px;
+  }
+
+  .preamble h3:active ~ p,
+.explanation h3:active ~ p,
+.participation h3:active ~ p,
+.benefits h3:active ~ p,
+.requirements h3:active ~ p {
+    display: block;
+    background-color: pink;
+    position: inherit;
+    font-size: 1em;
+    width: 120%;
+    padding: 10px;
+    -webkit-animation-name: textblend;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: textblend;
+    animation-duration: 1s;
+  }
+
+  .preamble h3:active ~ p {
+    transform: translate(30vw, -70px);
+  }
+
+  .explanation h3:active ~ p {
+    transform: translate(30vw, -135px);
+  }
+
+  .participation h3:active ~ p {
+    transform: translate(30vw, -225px);
+  }
+
+  .benefits h3:active ~ p {
+    transform: translate(30vw, -305px);
+  }
+
+  .requirements h3:active ~ p {
+    transform: translate(30vw, -395px);
+  }
+
+  @-webkit-keyframes textblend {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: pink;
+    }
+  }
+  /* Standard syntax */
+  @keyframes textblend {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: pink;
+    }
+  }
+  .requirements:hover,
+.benefits:hover,
+.participation:hover,
+.explanation:hover,
+.preamble:hover {
+    cursor: pointer;
+  }
+
+  .requirements h3:hover,
+.benefits h3:hover,
+.participation h3:hover,
+.explanation h3:hover,
+.preamble h3:hover {
+    cursor: pointer;
+    -webkit-animation-name: menublend;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: menublend;
+    animation-duration: 1s;
+    background-color: #005c48;
+  }
+
+  @-webkit-keyframes menublend {
+    from {
+      background-color: #019678;
+    }
+    to {
+      background-color: #005c48;
+    }
+  }
+  /* Standard syntax */
+  @keyframes menublend {
+    from {
+      background-color: #019678;
+    }
+    to {
+      background-color: #005c48;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .page-wrapper {
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 17em 0.1fr;
+    grid-row-gap: 0px;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-column: 1/span 3;
+    position: absolute;
+    width: 100%;
+  }
+
+  .intro header {
+    grid-column: 1/span 3;
+    grid-row-start: 1;
+    display: flex;
+    width: 25%;
+  }
+
+  .summary {
+    grid-row: 1/span 1;
+    width: 90%;
+    justify-self: center;
+  }
+
+  .supporting {
+    grid-row-start: 2;
+    margin-top: -30px;
+    min-width: 333px;
+    width: auto;
+  }
+
+  .preamble {
+    min-width: 293px;
+    width: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    margin-top: -30px;
+  }
+
+  .preamble h3 {
+    margin-bottom: 0;
+  }
+
+  footer::after {
+    content: url(SVG/seeds.svg);
+    width: 250px;
+    position: absolute;
+    top: 680px;
+    left: 70px;
+  }
+
+  .preamble h3:active ~ p,
+.explanation h3:active ~ p,
+.participation h3:active ~ p,
+.benefits h3:active ~ p,
+.requirements h3:active ~ p {
+    display: block;
+    background-color: pink;
+    position: inherit;
+    font-size: 1em;
+    width: 193%;
+    padding: 40px;
+    -webkit-animation-name: textblend;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: textblend;
+    animation-duration: 1s;
+    border-radius: 5px;
+  }
+
+  .preamble h3:active ~ p {
+    transform: translate(26.5vw, -50px);
+  }
+
+  .explanation h3:active ~ p {
+    transform: translate(26.5vw, -135px);
+  }
+
+  .participation h3:active ~ p {
+    transform: translate(26.5vw, -225px);
+  }
+
+  .benefits h3:active ~ p {
+    transform: translate(26.5vw, -305px);
+  }
+
+  .requirements h3:active ~ p {
+    transform: translate(26.5vw, -395px);
+  }
+
+  @-webkit-keyframes textblend {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: pink;
+    }
+  }
+  /* Standard syntax */
+  @keyframes textblend {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: pink;
+    }
+  }
+  .requirements:hover,
+.benefits:hover,
+.participation:hover,
+.explanation:hover,
+.preamble:hover {
+    cursor: pointer;
+  }
+
+  .requirements h3:hover,
+.benefits h3:hover,
+.participation h3:hover,
+.explanation h3:hover,
+.preamble h3:hover {
+    cursor: pointer;
+    -webkit-animation-name: menublend;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-name: menublend;
+    animation-duration: 1s;
+    background-color: #005c48;
+  }
+
+  @-webkit-keyframes menublend {
+    from {
+      background-color: #019678;
+    }
+    to {
+      background-color: #005c48;
+    }
+  }
+  /* Standard syntax */
+  @keyframes menublend {
+    from {
+      background-color: #019678;
+    }
+    to {
+      background-color: #005c48;
+    }
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

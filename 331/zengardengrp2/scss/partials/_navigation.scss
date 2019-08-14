@@ -1,0 +1,55 @@
+
+  .design-selection {
+    background: $color-1;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 40px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+   
+    li a {
+      color: $color-5;
+      margin: 10px;
+ 
+    }
+  
+  
+  }
+
+  .design-name{
+ 
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: $primary-font;
+    display: block;
+    }
+  
+    .designer-name{
+   
+      font-family: $secondary-font;
+  
+    }
+
+  .design-archives, .zen-resources {
+
+
+    padding: 20px;
+    text-align: left;
+    padding: 15px;
+    display: inline-block;
+    vertical-align:  top;
+  
+    
+  li a {
+    color: $color-7;
+    padding: 10px;
+   
+
+
+  }
+
+
+}

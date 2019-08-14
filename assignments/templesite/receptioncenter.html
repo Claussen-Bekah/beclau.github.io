@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reception Center | Temple Inn & Suites</title>
+    <meta name="description"
+        content="Book our reception center for your upcoming temple marriage. Convenient onsite childcare, facilities and more. Check out our catering package as well!">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/small.css">
+
+    <link rel="stylesheet" href="css/medium.css">
+
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans%7CVollkorn">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="headerTop">
+            <nav>
+                <div class="smallNav">
+                    <button class="menu" onclick="openNav()">&#9776;</button>
+                    <div id="primaryNav" class="nav">
+                        <span class="close" onclick="closeNav()">&times;</span>
+                        <a href="index.html" class="extraSpace">Home</a>
+                        <a href="reservations.html">Reservations</a>
+                        <a href="templeinfo.html">Temple Information</a>
+                        <div class="dropdown">
+                            <a href="#" onclick="openSub()" class="dropbtn current">Services &#62;</a>
+                            <div class="dropdown-content">
+                                <div class="hide" id="smsubNav">
+                                    <a href="services.html">Amenities </a>
+                                    <a href="receptioncenter.html">Reception Center</a>
+                                    <a href="missionaryinfo.html">Full-Time Missionary</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html" >Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="largeNav">
+                    <a href="index.html">Home</a>
+                    <a href="reservations.html">Reservations</a>
+                    <a href="templeinfo.html">Temple Information</a>
+                    <div class="dropdown">
+                        <a href="#" onclick="openSub()" class="dropbtn current">Services &#62;</a>
+                        <div class="dropdown-content">
+                            <div class="hide" id="lgsubNav">
+                                <a href="services.html">Amenities</a>
+                                <a href="receptioncenter.html">Reception Center</a>
+                                <a href="missionaryinfo.html">Full-Time Missionary</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </nav>
+
+            <img src="images/logo.png" class="logo" alt="Temple Inn and Suites Logo">
+            <h1>Temple Inn & Suites</h1>
+
+        </div>
+    </header>
+<main>
+
+        
+<div class="servicesGrid">
+
+    <div class="services">
+    <h2>Reception Center Services</h2>
+        <ul>
+        <li>Tables and chairs</li>
+        <li>Diningware, including cutlery, plates, bowls etc.</li>
+        <li>Catering available for added fee</li>
+        <li>Outdoor dining area available in the Tijuana, Melbourne, and Cebu City locations</li>
+        <li>Area for ring ceremony</li>
+       <li>Onsite accomodations for guests</li>
+        <li>Within one mile of our four temples: Cebu City, Copenhagen, Melbourne, and Tijuana</li>
+    </ul>
+</div>
+        
+<form method="GET" target="_blank" action="thanks.html">
+        <fieldset>
+                <legend class="firstLegend">Registrant Information</legend>
+                <label class="userInput">Full name*<input type="text" name="name" placeholder="Jane Smith"
+                        pattern="[A-Za-z\s]{5,}" required></label>
+                <label class="userInput">Email*<input type="email" name="email" placeholder="example@email.com"
+                        required></label>
+                <label class="userInput">Phone Number*<input type="tel" name="phone" placeholder="5551234567"
+                        required></label>
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Reservation Information</legend>
+                <label class="userInput highSpace" for="location-select">Location*</label> <select name="location"
+                    id="location-select" required>
+                    <option value="">Select Location...</option>
+                    <option value="Copenhagen, Denmark">Copenhagen, Denmark</option>
+                    <option value="Tijuana, Mexico">Tijuana, Mexico</option>
+                    <option value="Cebu City, Phillipines">Cebu City, Phillipines</option>
+                    <option value="Melbourne, Australia">Melbourne, Australia</option>
+                </select>
+
+               
+
+                <label class="userInput highSpace" for="start">Event Date*:</label>
+
+                <input type="date" id="start" name="trip-start" class="dateInput" min="2019-04-06" required>
+               
+                <label class="userInput highSpace">Do you require catering services?</label>
+                <div class="lessSpace">
+                <input type="radio" name="danger-level" id="yes" value="yes" class="lessSpace"><label
+                        for="yes">Yes</label>
+                    </div>
+                    <div class="lessSpace">
+
+                <input type="radio" name="danger-level" id="no" value="no" class="lessSpace"><label
+                        for="no">No</label>
+                        </div>
+                <label class="userInput highSpace">Special Requests or Comments</label><textarea name="comments"
+                    class="comments"></textarea>
+                <button class="formButton" type="submit" name="submit">Reserve Reception Center</button>
+            </fieldset>
+
+</form>
+
+    <div class="serviceImgs">
+            <figure class="infoImg">
+                    <img src="images/reception.jpg" alt="reception center at the Phillipines location">
+                    <figcaption>Reception center at the Phillipines location</figcaption>
+            </figure>
+            <figure class="infoImg">
+                    <img src="images/couple.jpg" alt="wedding couple making hearts with hands">
+                    <figcaption>Find your happily ever after with us!</figcaption>
+            </figure>
+            <figure class="infoImg">
+                    <img src="images/catering.jpg" alt="sandwich and salad on plate">
+                    <figcaption>Contact us for more info on catering options</figcaption>
+            </figure>
+         
+        </div>
+    </div>
+</main>
+    <footer>
+            <section class="contact">
+                <div class="contactInfo">
+                    <h3 class="contactHead">Contact Information</h3>
+    
+                    <ul>
+                        <li><span class="start">Phone:</span> 555-123-4567</li>
+                        <li><span class="start">Email:</span> contact@templeinn.com</li>
+                        <li><span class="start">Address:</span> 4800 Montgomery Ln #300, Bethesda, MD 20814</li>
+                    </ul>
+                </div>
+                <div class="socialMedia">
+                    <figure><img src="images/facebook.png" alt="facebook icon"></figure>
+                    <figure><img src="images/instagram.png" alt="instagram icon"></figure>
+                    <figure><img src="images/twitter.png" alt="twitter icon"></figure>
+                </div>
+            </section>
+            <div class="attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+                    title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                    title="Flaticon">www.flaticon.com</a> is licensed by <a
+                    href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                    3.0 BY</a></div>
+    
+        </footer>
+    
+        <script src="js/hamburger.js"></script>
+        <script src="js/submenu.js"></script>
+    
+    
+    
+    </body>
+    
+    </html>

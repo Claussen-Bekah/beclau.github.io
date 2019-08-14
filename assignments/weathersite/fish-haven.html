@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="pageTitle">Fish Haven | Gem State Weather | Current Weather Conditions and Events</title>
+    <meta name="description"
+        content="Fish Haven Idaho current weather conditions, upcoming events, relevant news articles and weather information and contact info for Gem State Weather">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/small.css">
+
+    <link rel="stylesheet" href="css/medium.css">
+
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville%7CMirza%7CNunito%7CPatua+One">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" class="logo" alt="cloud and sun">
+
+        <div class="heading">
+            <h1 class="site-name">GEM STATE WEATHER</h1>
+
+            <div class="motto">No matter the weather, we'll be here to let you know</div>
+        </div>
+    </header>
+
+    <nav>
+        <button class="menu" onclick="toggleMenu()">&#9776; Menu</button>
+
+        <div class="navflex">
+            <ul id="primaryNav" class="hide">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html" class="current">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h2>Fish Haven, Idaho</h2>
+
+        <div class="snippet">
+
+            <figure class="snippetimg">
+                <img src="images/fish-haven-hero.jpg" alt="town in shadow of mountains" sizes="100vw" srcset="images/fish-haven-hero800.jpg 800w,
+                images/fish-haven-hero.jpg 1160w">
+            </figure>
+
+            <section class="summary">
+
+                <h3 class="headSummary">Weather Summary</h3>
+                <ul class="summary-list">
+                    <li>Currently: <span id="currentOutput" class="output"></span></li>
+
+                    <li>Temperature: <span id="tempOutput" class="output"></span></li>
+
+                    <li>Wind Chill: <span id="windOutput" class="output"></span></li>
+
+                    <li>Humidity: <span id="humidOutput" class="output"></span></li>
+
+                    <li>Wind Speed: <span id="speedOutput" class="output"></span></li>
+                </ul>
+
+            </section>
+        </div>
+
+        <section class="forecast">
+            <h3>5-Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr class="row01">
+                        <th>
+                            Monday
+                        </th>
+                        <th>
+                            Tuesday
+                        </th>
+                        <th>
+                            Wednesday
+                        </th>
+                        <th>
+                            Thursday
+                        </th>
+                        <th>
+                            Friday
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="dayOutput">
+
+                    </tr>
+                </tbody>
+            </table>
+
+        </section>
+
+        <article class="preview">
+
+            <div class="articleGroup">
+
+
+
+                <div class="articleImg">
+                    <figure class="previewimg">
+                        <img src="images/barn.jpg" alt="barn in field with mountains">
+                    </figure>
+                </div>
+
+                <div class="articleContent">
+
+                    <h3 class="articleHeading">Barn Construction Tips</h3>
+                    <h4>By Hailey Cedar</h4>
+
+                    <p>
+                        I have some great tips for those of you who want to be the envy of your neighbors (and your
+                        neighbors' livestock!) and build the barn of your wildest dreams. First, let's talk materials.
+                        The best barns have a stone or cement base, with wood framing and some sort of waterproof
+                        exterior. I recommend metal roofs so that the snow slides off easily, but if your barn's roof
+                        pitch is steep enough, you can get away with shingles, which look better.
+                    </p>
+
+                    <p>
+                        Next, you'll want to think about how you want your barn to look, and it's dimensions. Dimensions
+                        are important, and largely depends on how much space you need (duh!). Think about your livestock
+                        and your storage needs and then go talk to Richard Henderson. He knows a thing or two about
+                        barns and would be happy to help you draw up some plans.
+                    </p>
+
+                    <p>
+                        Painting your barn is obviously for aesthetic reasons. I love a good red barn, but feel free to
+                        branch out and get blue or green or even just stick to white!
+                    </p>
+
+                    <a href="#">Continue reading...</a>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article>
+            <div class="article-item" id="townEvents">
+                <h3>Town Events</h3>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+
+        <div class="contact">
+
+            <div class="contact-info">
+
+                <h5 class="white">
+                    Contact Information
+                </h5>
+
+                <p class="type white">Phone: <span class="input">(208) 555-5555</span></p>
+                <p class="type white">Email: <span class="input">gemstateweather@email.com</span></p>
+                <p class="type white">Address: <span class="input">123 Main St Preston, ID 83263</span></p>
+
+
+                <div class="social-media">
+                    <img src="images/facebook.png" alt="facebook logo">
+                    <img src="images/insta.png" alt="instagram logo">
+                    <img src="images/youtube.png" alt="youtube logo">
+                </div>
+
+            </div>
+
+            <figure class="map">
+                <a href="https://goo.gl/maps/1Qda5VinDj42" target="_blank">
+                    <img src="images/map.png" alt="map snippet">
+                </a>
+            </figure>
+
+        </div>
+
+
+
+        <div class="terms">
+            <a href="https://openweathermap.org" target='_blank'>OpenWeatherMap</a>
+
+            <div class="copyright">&copy; 2019 Gem State Weather | <a href="#" target="_blank">Terms of Use</a> | Bekah
+                Claussen</div>
+
+            <span id="currentDate"></span>
+
+        </div>
+
+    </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/forecastapi.js"></script>
+    <script src="js/townevents.js"></script>
+
+
+</body>
+
+</html>

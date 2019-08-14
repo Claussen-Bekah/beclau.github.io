@@ -1,0 +1,177 @@
+
+
+
+#zen-intro h1, .select {
+	background-color: $color-1;
+	color: $color-5;
+	box-shadow: 0 1px 1px rgba(#000, 0.05);
+	border-radius: 5px;
+	padding: 20px;
+	margin: 10px;
+	text-transform: uppercase;
+	font-family: $primary-font;
+	font-weight: bold;
+  }
+
+  #zen-intro h1, .summary, .select{
+	background-color: $color-1;
+	color: $color-5;
+	box-shadow: 0 1px 1px rgba(#000, 0.05);
+	border-radius: 5px;
+	padding: 20px;
+	margin: 10px;
+	margin-left: 25px;
+
+	font-family: $secondary-font;
+
+  }
+
+
+/* -------------------------------- 
+
+xBasic style
+
+-------------------------------- */
+
+*, *::after, *::before {
+	@include box-sizing(border-box);
+}
+
+html * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: $primary-font;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+input, textarea, select {
+	font-family: $primary-font;
+	font-size: 1.6rem;
+}
+
+
+
+.participation, .benefits, .requirements, .explanation {
+   	padding: 10px;
+	margin: 10px;
+	height: 70px;
+  }
+  
+
+ .preamble {
+	 padding: 0;
+	 margin: 20px;
+	 margin-bottom: -20px;
+ }
+  
+  
+  h2 {
+	font-family: $secondary-font;
+	box-shadow: 0 1px 1px rgba(#000, 0.05);
+	border-radius: 5px;
+	color: $color-5;
+	padding: 30px;
+	background: $color-6;
+	margin: 10px 20px 10px 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+  }
+  
+  h1 {
+	font-size: 2.4rem;
+	font-weight: 300;
+	line-height: 1.2;
+	margin: 0 0 0.4em;
+  }
+  
+   
+  .intro h3, .main h3{
+	font-family: $secondary-font;
+	color: $color-5;
+	text-transform: uppercase;
+	padding: 20px;
+	border: none;
+	box-shadow: none;
+	border-radius: 1em;
+	font: {
+	  size: 1.4rem;
+	  family: $secondary-font;
+	}
+	background: $color-4;
+  }
+  
+  
+  p {
+	font-size: 1.4rem;
+	line-height: 1.4;
+	color: lighten($color-5, 25%);
+	padding: 10px;
+  font-family: $secondary-font;
+	a {
+	  color: $color-5;
+	  text-decoration: underline;
+	}
+  
+  }
+
+  footer{
+	padding: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+	a{
+		font-family: $primary-font;
+		color: $color-1;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 10px;
+		-webkit-animation: glow 1s ease-in-out infinite alternate;
+		-moz-animation: glow 1s ease-in-out infinite alternate;
+		animation: glow 1s ease-in-out infinite alternate;
+	}
+	a:hover{
+		color: $color-5;
+		cursor: pointer;
+	}
+	
+  }
+
+  .design-archives ul li, .design-archives h3, .zen-resources h3, .zen-resources ul li {
+  padding-bottom: 10px;
+}
+
+
+
+  @-webkit-keyframes glow {
+	from {
+	  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+	to {
+	  text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
+}
+
+	@keyframes glow {
+		from {
+			text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+		  }
+		  to {
+			text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+		  }
+  }

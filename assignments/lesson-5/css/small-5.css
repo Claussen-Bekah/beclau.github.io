@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Mirza|Nunito|Patua+One');
+
+body{
+    margin: auto;
+    width: 100%;
+}
+
+/*Header*/
+
+.logo, .site-name, .heading {
+    display: inline-block;
+    vertical-align: middle;	
+}
+
+header {
+    background-color: #456990;
+    text-align: center;
+}
+
+.site-name {
+    font-family: "Patua One", "Big Caslon", Cambria, serif;
+    font-size: 2.5em;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.motto {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #dfd9e2;
+    font-style: oblique;
+    padding-bottom: 10px;
+
+}
+
+/*Navigation*/
+
+nav button {
+    background-color: transparent;
+    border: none;
+    color: #3f4743;
+    padding: 1em 0;
+    margin: auto;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 1.3em; 
+    display: block;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #dfd9e2;
+    border: .1em #dfd9e2 solid;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+
+nav ul.hide {
+    display: none;
+}
+
+
+nav ul li a {
+    color: #3f4743;
+    text-decoration: none;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color: #3f4743;
+    font-size: 1.3em; 
+    display: block;
+    padding: .8em;
+}
+
+.current {
+   background-color: rgba(0,0,0,0.4);
+   color: white;
+   padding: .8em;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: #456990;
+  padding: .7em;
+}
+
+/*General font*/
+
+p {
+    font-family: "Libre Baskerville", Georgia, 'Times New Roman', Times, serif;
+    font-size: .8em;
+}
+
+h2, h3 {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color: #456990;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.7em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #3f4743;
+}
+
+h5 {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color: #456990;
+    font-size: 1.2em;
+}
+
+/*Weather summary*/
+
+.snippet {
+    margin-bottom: 1em;
+    position: relative;
+}
+
+main figure.snippetimg {
+    width: 97%;
+    margin: auto;
+}
+
+main figure.snippetimg img {
+    width: 100%;
+}
+
+.summary {
+    position: absolute;
+	top: 1.5em;
+	left: 2em;
+	background-color: #ffffff;
+    border: 2px solid #456990;
+    padding: 1.5rem;
+}
+
+/*5 day forecast*/
+
+.forecast {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin: 1em auto;
+}
+
+table {
+    border: 1px #dfd9e2 solid;
+    border-collapse: collapse;
+    text-align: center;
+    margin: auto;
+}
+
+thead {
+    background-color: #456990;
+    border: 1px #3f4743 solid;
+}
+
+td {
+    border: 1px #3f4743 solid;
+    color: #3f4743;
+    padding: .6em;
+}
+
+th {
+    color: #ffffff;
+    padding: 1em;
+}
+
+table, th, td {
+    border: 1px solid #3f4743;
+}
+
+.forecastimg {
+    width: 40px;
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+
+}
+
+/*Article preview*/
+
+.preview {
+    background-color: #dfd9e2;
+    padding: 10px;
+}
+
+article figure.previewimg {
+    width: 98%;
+    margin: auto;
+}
+
+article figure.previewimg img {
+    width: 100%;
+}
+.previewimg {
+    width: 100%;
+}
+
+.preview-title {
+    text-align: left;
+}
+
+.preview p a {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color: #456990;
+    font-size: 1.4em;
+}
+
+/*Footer contact info*/
+
+.contact {
+    margin-top: .7em;
+    padding-left: 2em;
+    padding-top: .7em;
+    padding-bottom: .7em;
+    background-color: #3f4743;
+    
+}
+
+.contact p, .contact h5 {
+    color: #dfd9e2;
+}
+
+
+.input {
+    float: right;
+    padding-right: 4em;
+}
+
+.social-media img {
+    width: 40px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+/*Footer map*/
+
+footer figure.map {
+    width: 70%;
+    margin: auto;
+}
+
+footer figure.map img {
+    width: 100%;
+}
+
+/*Footer terms and copyright*/
+
+.terms {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #dfd9e2;
+}
+
+/*Clearfix*/
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+

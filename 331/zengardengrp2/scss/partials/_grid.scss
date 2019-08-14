@@ -1,0 +1,168 @@
+//grid variables
+$gridcolumns: .5fr 1fr .5fr;
+
+@include MQ(L) {
+    .page-wrapper {
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        grid-template-rows: 17em 0.1fr;
+        grid-row-gap: 0px;
+    }
+
+    .intro {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        grid-column: 1/span 3;
+        position: absolute;
+        width: 100%;
+    }
+
+    .intro header {
+        grid-column: 1/span 3;
+        grid-row-start: 1;
+        display: flex;
+        width: 25%;
+    }
+
+    .summary {
+        grid-row: 1/span 1;
+        width: 90%;
+        justify-self: center;
+    }
+
+    .supporting {
+        grid-row-start: 2;
+        margin-top: -30px;
+        min-width: 333px;
+        width: auto;
+    }
+
+    .preamble {
+        min-width: 293px;
+        width: auto;
+    }
+
+    .sidebar {
+        width: 100%;
+        grid-column-start: 3;
+        grid-row-start: 1;
+        margin-top: -30px;
+    }
+
+    .preamble h3 {
+        margin-bottom: 0;
+    }
+
+    footer::after {
+        content: url(SVG/seeds.svg);
+        width: 250px;
+        position: absolute;
+        top: 680px;
+        left: 70px;
+    }
+
+    .preamble h3:active~p,
+    .explanation h3:active~p,
+    .participation h3:active~p,
+    .benefits h3:active~p,
+    .requirements h3:active~p {
+        display: block;
+        background-color: pink;
+        position: inherit;
+        font-size: 1em;
+        width: 193%;
+        padding: 40px;
+        -webkit-animation-name: textblend;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: textblend;
+        animation-duration: 1s;
+        border-radius: 5px;
+    }
+
+    .preamble h3:active~p {
+        transform: translate(26.5vw, -50px);
+    }
+
+    .explanation h3:active~p {
+        transform: translate(26.5vw, -135px);
+    }
+
+    .participation h3:active~p {
+        transform: translate(26.5vw, -225px);
+    }
+
+    .benefits h3:active~p {
+        transform: translate(26.5vw, -305px);
+    }
+
+    .requirements h3:active~p {
+        transform: translate(26.5vw, -395px);
+    }
+
+    @-webkit-keyframes textblend {
+        from {
+            background-color: white;
+        }
+
+        to {
+            background-color: pink;
+        }
+    }
+
+    /* Standard syntax */
+    @keyframes textblend {
+        from {
+            background-color: white;
+        }
+
+        to {
+            background-color: pink;
+        }
+    }
+
+    .requirements:hover,
+    .benefits:hover,
+    .participation:hover,
+    .explanation:hover,
+    .preamble:hover {
+        cursor: pointer;
+    }
+
+    .requirements h3:hover,
+    .benefits h3:hover,
+    .participation h3:hover,
+    .explanation h3:hover,
+    .preamble h3:hover {
+        cursor: pointer;
+        -webkit-animation-name: menublend;
+        /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s;
+        /* Safari 4.0 - 8.0 */
+        animation-name: menublend;
+        animation-duration: 1s;
+        background-color: #005c48;
+    }
+
+    @-webkit-keyframes menublend {
+        from {
+            background-color: #019678;
+        }
+
+        to {
+            background-color: #005c48;
+        }
+    }
+
+    /* Standard syntax */
+    @keyframes menublend {
+        from {
+            background-color: #019678;
+        }
+
+        to {
+            background-color: #005c48;
+        }
+    }
+
+}

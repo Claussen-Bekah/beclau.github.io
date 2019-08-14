@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amenities | Temple Inn & Suites</title>
+    <meta name="description"
+        content="Services offered by Temple Inn & Suites that make your temple trip easier so you can focus on the ordinances.">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/small.css">
+
+    <link rel="stylesheet" href="css/medium.css">
+
+    <link rel="stylesheet" href="css/large.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans%7CVollkorn">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="headerTop">
+            <nav>
+                <div class="smallNav">
+                    <button class="menu" onclick="openNav()">&#9776;</button>
+                    <div id="primaryNav" class="nav">
+                        <span class="close" onclick="closeNav()">&times;</span>
+                        <a href="index.html" class="extraSpace">Home</a>
+                        <a href="reservations.html">Reservations</a>
+                        <a href="templeinfo.html">Temple Information</a>
+                        <div class="dropdown">
+                            <a href="#" onclick="openSub()" class="dropbtn current">Services &#62;</a>
+                            <div class="dropdown-content">
+                                <div class="hide" id="smsubNav">
+                                    <a href="services.html">Amenities </a>
+                                    <a href="receptioncenter.html">Reception Center</a>
+                                    <a href="missionaryinfo.html">Full-Time Missionary</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="contact.html" >Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="largeNav">
+                    <a href="index.html">Home</a>
+                    <a href="reservations.html">Reservations</a>
+                    <a href="templeinfo.html">Temple Information</a>
+                    <div class="dropdown">
+                        <a href="#" onclick="openSub()" class="dropbtn current">Services &#62;</a>
+                        <div class="dropdown-content">
+                            <div class="hide" id="lgsubNav">
+                                <a href="services.html">Amenities</a>
+                                <a href="receptioncenter.html">Reception Center</a>
+                                <a href="missionaryinfo.html">Full-Time Missionary</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </nav>
+
+            <img src="images/logo.png" class="logo" alt="Temple Inn and Suites Logo">
+            <h1>Temple Inn & Suites</h1>
+
+        </div>
+    </header>
+<main>
+
+        
+<div class="servicesGrid">
+
+    <div class="services">
+    <h2>Long-term Accommodations</h2>
+        <ul>
+        <li>Full-time missionaries serving in the temple or in family history centers can book long-term accomodation at Temple Inn & Suites</li>
+        <li>Includes apartment-style living with kitchenettes</li>
+        <li>Fully furnished</li>
+        <li>Monthly rentals available</li>
+       <li>Access to pool, fitness center, WiFi, parking, and shuttle</li>
+        <li>Free breakfast is not available in our long-term accomodations, but can always be purchased</li>
+    </ul>
+</div>
+
+<form method="GET" target="_blank" action="thankscontact.html" class="missionContact">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <label class="userInput">Full name*<input type="text" name="name" placeholder="Jane Smith"
+                    pattern="[A-Za-z\s]{5,}" required></label>
+            <label class="userInput">Email*<input type="email" name="email" placeholder="example@email.com"
+                    required></label>
+            <label class="userInput">Phone Number*<input type="tel" name="phone" placeholder="5551234567"
+                    required></label>
+            <label class="userInput highSpace">Comments*</label><textarea name="comments" class="comments"
+                required></textarea>
+            <button class="formButton" type="submit" name="submit">Contact Us</button>
+
+        </fieldset>
+        </form>
+
+    <div class="serviceImgs">
+            <figure class="infoImg">
+                    <img src="images/kitchen.jpg" alt="small contemporary kitchen in Melbourne Australia">
+                    <figcaption>Kitchen at Melbourne, Australia</figcaption>
+            </figure>
+            <figure class="infoImg">
+                    <img src="images/tijuana-apartment.jpg" alt="friendly and inviting living room">
+                    <figcaption>Tijuana, Mexico apartment living space</figcaption>
+            </figure>
+            <figure class="infoImg">
+                    <img src="images/copenhagen-apt.jpg" alt="cozy and neat living room with wood accents">
+                    <figcaption>Copenhagen, Denmark living space</figcaption>
+            </figure>
+            <figure class="infoImg">
+                    <img src="images/cebu-apartment.jpg" alt="contemporary living room">
+                    <figcaption>Cebu City, Phillipines living space</figcaption>
+            </figure>
+        </div>
+    </div>
+</main>
+    <footer>
+            <section class="contact">
+                <div class="contactInfo">
+                    <h3 class="contactHead">Contact Information</h3>
+    
+                    <ul>
+                        <li><span class="start">Phone:</span> 555-123-4567</li>
+                        <li><span class="start">Email:</span> contact@templeinn.com</li>
+                        <li><span class="start">Address:</span> 4800 Montgomery Ln #300, Bethesda, MD 20814</li>
+                    </ul>
+                </div>
+                <div class="socialMedia">
+                    <figure><img src="images/facebook.png" alt="facebook icon"></figure>
+                    <figure><img src="images/instagram.png" alt="instagram icon"></figure>
+                    <figure><img src="images/twitter.png" alt="twitter icon"></figure>
+                </div>
+            </section>
+            <div class="attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik"
+                    title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                    title="Flaticon">www.flaticon.com</a> is licensed by <a
+                    href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                    3.0 BY</a></div>
+    
+        </footer>
+    
+        <script src="js/hamburger.js"></script>
+        <script src="js/submenu.js"></script>
+    
+    
+    
+    </body>
+    
+    </html>

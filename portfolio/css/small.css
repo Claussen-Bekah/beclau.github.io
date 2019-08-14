@@ -18,9 +18,15 @@ a {
 a:hover {
     color: #E97F14;
 }
+.logoLink {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+}
 
 .logoLink:hover {
-    border: #808080 3px solid;
+    opacity: .3;
 }
 
 .logos {

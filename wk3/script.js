@@ -70,7 +70,12 @@ function buildDino(dino) {
 
     if (dino.diet == 'herbivore') {
         var p = document.createElement('p');
-        p.textContent = "Eat me!";
+        p.textContent = "eat me!";
+        div.appendChild(p);
+    }
+    else {
+        var p = document.createElement('p');
+        p.textContent = "mmm...meat";
         div.appendChild(p);
     }
 }

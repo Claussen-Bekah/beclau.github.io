@@ -1,4 +1,5 @@
-var dinoArray = [{
+//associate array within an array
+let dinoArray = [{
         'name': 'Allosaurus',
         'diet': 'carnivore',
         'time': 'Jurassic'
@@ -39,42 +40,46 @@ var dinoArray = [{
     }
 ];
 
+//loop through array and build out elements
 for (let i = 0; i < dinoArray.length; i++) {
     buildDino(dinoArray[i]);
 }
 
+//function that builds dinos and needs the parameter dino
 function buildDino(dino) {
-    var output = document.getElementById('dino');
+    //lots of variables
+    let output = document.getElementById('dino');
 
-    var div = document.createElement('div');
+    let div = document.createElement('div');
     div.setAttribute('class', 'cell');
     output.appendChild(div);
 
 
-    var img = document.createElement('img');
+    let img = document.createElement('img');
     img.setAttribute('src', 'img/' + dino.name.toLowerCase() + '.png');
     img.setAttribute('alt', 'picture of the mighty' + dino.name.toLowerCase());
     div.appendChild(img);
 
-    var h2 = document.createElement('h2');
+    let h2 = document.createElement('h2');
     h2.textContent = dino.name;
     div.appendChild(h2);
 
-    var h3 = document.createElement('h3');
+    let h3 = document.createElement('h3');
     h3.textContent = dino.diet;
     div.appendChild(h3);
 
-    var h3Time = document.createElement('h3');
+    let h3Time = document.createElement('h3');
     h3Time.textContent = dino.time;
     div.appendChild(h3Time);
 
+    //conditional statement
     if (dino.diet == 'herbivore') {
-        var p = document.createElement('p');
+        let p = document.createElement('p');
         p.textContent = "eat me!";
         div.appendChild(p);
     }
     else {
-        var p = document.createElement('p');
+        let p = document.createElement('p');
         p.textContent = "mmm...meat";
         div.appendChild(p);
     }

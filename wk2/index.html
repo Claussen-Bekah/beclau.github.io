@@ -5,19 +5,20 @@
     <meta charset="utf-8">
     <title>CSS Modification | Bekah M. CLaussen | BYU-Idaho</title>
     <meta name="description" content="An overview of modifying CSS classes using JavaScript">
+    <link rel="stylesheet" href='style.css'>
 </head>
 
 <body>
 
-    <h1 id="head">Header being modified using JavaScript</h1>
-    <h2 id="head2">Second header being modified using JS</h2>
+    <h1 id="head">Hello! I am a page being modified using JavaScript + CSS</h1>
+    <h2 id="head2">I am also being changed using JS</h2>
 
     <p class="para">Here is the first paragraph.</p>
-    <p class="para">Here is the second paragraph.</p>
+    <p class="para">Here is the second paragraph. It's a little different.</p>
 
-    <button type="button" id="button" onclick="changeColor()">Click Me for something cool!</button>
+    <div class="center"><button type="button" id="button" onclick="displayHidden()" onmouseover="hoverStyle()" class="basic">Click Me for something cool!</button></div>
 
-   <p><a href="#" id="link" onclick="loadError()">Win $10000000 dollars by clicking here!</a></p>
+    <div id="special" class="hidden para"><p>I am a special hidden div that will appear magically.</p></div>
 
     <script src="script.js"></script>
 </body>

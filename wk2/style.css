@@ -1,0 +1,29 @@
+
+.hidden {
+    display: none;
+}
+
+.basic {
+    background-color: purple;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    transition: all 1s;
+}
+
+.hover {
+    background-color: #47cacc;
+   
+}
+
+.animation {
+    background-color: #E7b7c8;
+    transform: scale(1.25);
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}

@@ -1,4 +1,4 @@
-//associate array within an array
+//associative array within an array
 let dinoArray = [{
         'name': 'Allosaurus',
         'diet': 'carnivore',
@@ -47,13 +47,13 @@ for (let i = 0; i < dinoArray.length; i++) {
 
 //function that builds dinos and needs the parameter dino
 function buildDino(dino) {
+    
     //lots of variables
     let output = document.getElementById('dino');
 
     let div = document.createElement('div');
     div.setAttribute('class', 'cell');
     output.appendChild(div);
-
 
     let img = document.createElement('img');
     img.setAttribute('src', 'img/' + dino.name.toLowerCase() + '.png');

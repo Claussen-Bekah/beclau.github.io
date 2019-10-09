@@ -45,42 +45,61 @@ for (let i = 0; i < dinoArray.length; i++) {
     buildDino(dinoArray[i]);
 }
 
+function flipCard(name){
+  document.getElementById(name).classList.toggle('flipped');
+}
+
 //function that builds dinos and needs the parameter dino
 function buildDino(dino) {
     
     //lots of variables
     let output = document.getElementById('dino');
+    let id = dino.name.toLowerCase();
 
-    let div = document.createElement('div');
-    div.setAttribute('class', 'cell');
-    output.appendChild(div);
+    let div1 = document.createElement('div');
+    div1.setAttribute('class', 'cell');
+    output.appendChild(div1);
+
+    let containerDiv = document.createElement('div');
+    containerDiv.setAttribute('class', 'card');
+    containerDiv.setAttribute('id', id);
+    containerDiv.setAttribute('onclick', "flipCard('" + id + "')"); //"this.classList.toggle('flipped')"
+    div1.appendChild(containerDiv);
+
+    let frontDiv = document.createElement('div');
+    frontDiv.setAttribute('class', 'frontDiv side');
+    containerDiv.appendChild(frontDiv);
+
+    let backDiv = document.createElement('div');
+    backDiv.setAttribute('class', 'backDiv side');
+    containerDiv.appendChild(backDiv);
 
     let img = document.createElement('img');
     img.setAttribute('src', 'img/' + dino.name.toLowerCase() + '.png');
     img.setAttribute('alt', 'picture of the mighty' + dino.name.toLowerCase());
-    div.appendChild(img);
+    frontDiv.appendChild(img);
 
     let h2 = document.createElement('h2');
     h2.textContent = dino.name;
-    div.appendChild(h2);
+    backDiv.appendChild(h2);
 
     let h3 = document.createElement('h3');
     h3.textContent = dino.diet;
-    div.appendChild(h3);
+    backDiv.appendChild(h3);
 
     let h3Time = document.createElement('h3');
     h3Time.textContent = dino.time;
-    div.appendChild(h3Time);
+    backDiv.appendChild(h3Time);
 
     //conditional statement
     if (dino.diet == 'herbivore') {
         let p = document.createElement('p');
         p.textContent = "eat me!";
-        div.appendChild(p);
+        backDiv.appendChild(p);
     }
     else {
         let p = document.createElement('p');
         p.textContent = "mmm...meat";
-        div.appendChild(p);
+        backDiv.appendChild(p);
     }
 }

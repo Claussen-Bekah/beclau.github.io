@@ -45,6 +45,7 @@ for (let i = 0; i < dinoArray.length; i++) {
     buildDino(dinoArray[i]);
 }
 
+//function that flips card on click and starts the explosion if a carnivore
 function flipCard(name, food, className){
     startExplosion(food, className);
     document.getElementById(name).classList.toggle('flipped');
@@ -65,6 +66,7 @@ function buildDino(dino) {
     let containerDiv = document.createElement('div');
     containerDiv.setAttribute('class', 'card');
     containerDiv.setAttribute('id', id);
+    //add onclick attribute
     containerDiv.setAttribute('onclick', `flipCard('${id}','${food}',this.className)`);
     div1.appendChild(containerDiv);
 
@@ -106,17 +108,22 @@ function buildDino(dino) {
     }
 }
 
+//find explosion svg and create variable
 let explosion = document.getElementById('explosion');
 
+//addEventListener for the animation end
 explosion.addEventListener('animationend', listener, false);
 
+//start the explosion
 function startExplosion(diet, className) {
+    //only explode if the dinosaur is a carnivoer and if the className only contains the word "card" (so that user can flip card back around)
     if (diet == 'carnivore' && className == 'card') {
         explosion.classList.toggle('hidden');
     }
 }
 
-function listener(event, name) {
+//listener function that automatically hides the svg at the end of the function
+function listener(event) {
     if (event.type = 'animationend') {
         explosion.classList.toggle('hidden');
     }

@@ -4,11 +4,44 @@
 }
 
 .cell {
+    position: relative;
+    height: 20em;
+    perspective: 800px;
+    box-sizing: content-box;
+}
+
+.cell .card.flipped {
+    transform: rotatey(-180deg);
+}
+
+.cell .card {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.cell .card .side {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+.cell .card .frontDiv {
     border: 2px black solid;
     border-radius: 5%;
     background-color: #eeeeee;
-    padding: 10px;
-    text-align: center;
+}
+
+.cell .card .backDiv {
+    border: 2px black solid;
+    border-radius: 5%;
+    background-color: #eeeeee;
+    transform: rotatey(-180deg);
 }
 
 img {
@@ -53,7 +86,25 @@ p {
     text-align: center;
 }
 
+.hidden {
+    display: none;
+}
 
+.animate {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    animation: 3s ease-out explode;
+}
+
+@keyframes explode {
+    from {
+        transform: scale(.5);
+    }
+    to {
+        transform: scale(3);
+    }
+}
 
 @media only screen and (min-width:620px) {
     #dino {

@@ -45,45 +45,79 @@ for (let i = 0; i < dinoArray.length; i++) {
     buildDino(dinoArray[i]);
 }
 
-
+function flipCard(name, food, className){
+    startExplosion(food, className);
+    document.getElementById(name).classList.toggle('flipped');
+}
 
 //function that builds dinos and needs the parameter dino
 function buildDino(dino) {
     
     //manipulate DOM using JS
     let output = document.getElementById('dino');
-   
+    let id = dino.name.toLowerCase();
+    let food = dino.diet;
 
     let div1 = document.createElement('div');
     div1.setAttribute('class', 'cell');
     output.appendChild(div1);
 
+    let containerDiv = document.createElement('div');
+    containerDiv.setAttribute('class', 'card');
+    containerDiv.setAttribute('id', id);
+    containerDiv.setAttribute('onclick', `flipCard('${id}','${food}',this.className)`);
+    div1.appendChild(containerDiv);
+
+    let frontDiv = document.createElement('div');
+    frontDiv.setAttribute('class', 'frontDiv side');
+    containerDiv.appendChild(frontDiv);
+
+    let backDiv = document.createElement('div');
+    backDiv.setAttribute('class', 'backDiv side');
+    containerDiv.appendChild(backDiv);
+
     let img = document.createElement('img');
     img.setAttribute('src', 'img/' + dino.name.toLowerCase() + '.png');
     img.setAttribute('alt', 'picture of the mighty' + dino.name.toLowerCase());
-    div1.appendChild(img);
+    frontDiv.appendChild(img);
 
     let h2 = document.createElement('h2');
     h2.textContent = dino.name;
-    div1.appendChild(h2);
+    backDiv.appendChild(h2);
 
     let h3 = document.createElement('h3');
     h3.textContent = dino.diet;
-    div1.appendChild(h3);
+    backDiv.appendChild(h3);
 
     let h3Time = document.createElement('h3');
     h3Time.textContent = dino.time;
-    div1.appendChild(h3Time);
+    backDiv.appendChild(h3Time);
 
     //conditional statement
     if (dino.diet == 'herbivore') {
         let p = document.createElement('p');
         p.textContent = "eat me!";
-        div1.appendChild(p);
+        backDiv.appendChild(p);
     }
     else {
         let p = document.createElement('p');
         p.textContent = "mmm...meat";
-        div1.appendChild(p);
+        backDiv.appendChild(p);
+    }
+}
+
+let explosion = document.getElementById('explosion');
+
+explosion.addEventListener('animationend', listener, false);
+
+function startExplosion(diet, className) {
+    if (diet == 'carnivore' && className == 'card') {
+        explosion.classList.toggle('hidden');
+    }
+}
+
+function listener(event, name) {
+    if (event.type = 'animationend') {
+        explosion.classList.toggle('hidden');
     }
 }

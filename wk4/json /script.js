@@ -12,11 +12,17 @@ const pets = [{
     age: "6 months old"
 }];
 
+var json = '{"name":"Bekah", "age":27}';
+
 let petsString = JSON.stringify(pets);
 
 console.log(petsString);
 
-console.log(JSON.parse(pets));
+obj = JSON.parse(json);
+
+console.log(obj.name);
+
+console.log(obj);
 
 function replacer(key, value) {
     console.log(typeof value);

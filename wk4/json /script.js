@@ -17,3 +17,16 @@ let petsString = JSON.stringify(pets);
 console.log(petsString);
 
 console.log(JSON.parse(pets));
+
+function replacer(key, value) {
+    console.log(typeof value);
+    if(key === 'age') {
+        return undefined;
+    }
+return value;
+}
+
+let petsString2 = JSON.stringify(pets, replacer);
+
+console.log(petsString2);
+

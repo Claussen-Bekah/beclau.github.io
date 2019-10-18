@@ -120,8 +120,6 @@ function showResults() {
         return `<li class="topScore">${score.name} -- ${score.score}</li>` ;
       })
       .join("");
-
-    
 }
 
 buildQuiz();

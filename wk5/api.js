@@ -115,15 +115,11 @@ function showResults() {
 
       highScores.push(score);
 
-      const scoreList = document.getElementById('results');
-
-      highScores.map( topScore => {
-        scoreList.push(`<li class="topScore">${score.name} -- ${score.score}</li>`);
-      });
-
-    //   resultsContainer.innerHTML = 
-    //   numCorrect + ' out of ' + questions.length;
-
+      resultsContainer.innerHTML = 
+      highScores.map( score => {
+        return `<li class="topScore">${score.name} -- ${score.score}</li>` ;
+      })
+      .join("");
 
     
 }

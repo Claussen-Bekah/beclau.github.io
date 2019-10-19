@@ -76,30 +76,27 @@ function buildQuiz() {
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
+
+
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 function showResults() {
     const answerContainers = quizContainer.querySelectorAll('.answers');
 
-    // keep track of user's answers
     let numCorrect = 0;
   
     let username = document.getElementById('name');
 
-    // for each question...
     questions.forEach( (currentQuestion, questionNumber) => {
-      // find selected answer
-      const answerContainer = answerContainers[questionNumber];
+
+        const answerContainer = answerContainers[questionNumber];
       const selector = 'input[name=question'+questionNumber+']:checked';
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
       
       if(userAnswer===currentQuestion.correctanswer){
-        // add to the number of correct answers
         numCorrect++;
         }
-      // if answer is wrong or blank
       else{
-        // color the answers red
         answerContainers[questionNumber].style.color = 'red';
       }
     });
@@ -111,6 +108,7 @@ function showResults() {
 
       highScores.sort( (a,b) => b.score - a.score);
 
+      
       localStorage.setItem("highScores", JSON.stringify(highScores));
 
       highScores.push(score);
@@ -123,7 +121,6 @@ function showResults() {
 }
 
 buildQuiz();
-
 
 submitButton.addEventListener('click', showResults);
 

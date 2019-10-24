@@ -21,9 +21,9 @@ function nonBearingTree() {
 nonBearingTree.prototype = Object.create(Tree.prototype);
 nonBearingTree.prototype.constructor = nonBearingTree;
 
-function deciduousTree() {
+function deciduousTree(shade) {
     nonBearingTree.call(this);
-    this.shade = true;
+    this.shade = shade;
 }
 
 deciduousTree.prototype = Object.create(nonBearingTree.prototype);
@@ -50,7 +50,7 @@ oakTree.name = 'Oak';
 oakTree.height = 100;
 oakTree.canopyWidth = 30;
 
-let mapleTree = new deciduousTree;
+let mapleTree = new deciduousTree(true);
 
 mapleTree.name = 'Maple';
 mapleTree.height = 125;

@@ -1,0 +1,49 @@
+
+.st0, .st1, .st2, .st3{fill:#D9E021;}
+
+svg {
+    width: 200px;
+    margin: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.st0 {
+    transition: fill 2s;
+}
+
+.st0:hover {
+    fill: seagreen;
+}
+
+.st1 {
+    transition: transform 1s ease-in;
+}
+
+.st1:hover {
+    transform: skew(20deg, 10deg);
+}
+
+.st2 {
+    transition: transform 2s steps(3, end) .2s;
+}
+
+.st2:hover {
+    transform: scale(2);
+}
+
+.st3 {
+    transition: fill 2s ease, transform 3s;
+}
+
+.st3:hover {
+    fill: goldenrod;
+    transform: scale(.5);
+}
+
+/* use the shorthand transition property */
+/* can define four things: property being manipulated (transition property), length of transition (transition-length),
+transition-timing-function, and tranisition delay */

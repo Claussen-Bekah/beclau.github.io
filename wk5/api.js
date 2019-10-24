@@ -1,3 +1,4 @@
+//build questions array
 const questions = [
     {
         question: "Is the allosaurus a carnivore?",
@@ -41,6 +42,7 @@ const questions = [
     }   
 ]
 
+//dynamically build quiz
 function buildQuiz() {
 
     const output = [];
@@ -70,16 +72,17 @@ function buildQuiz() {
     
       quizContainer.innerHTML = output.join('');
 
-
 }
 
+//grab HTML items
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 
-
+//get local storage string and parse into array
 const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
+//show results
 function showResults() {
     const answerContainers = quizContainer.querySelectorAll('.answers');
 
@@ -108,11 +111,12 @@ function showResults() {
 
       highScores.sort( (a,b) => b.score - a.score);
 
-      
+      //create local storage array and change into a string
       localStorage.setItem("highScores", JSON.stringify(highScores));
 
       highScores.push(score);
 
+      //display local storage high scores
       resultsContainer.innerHTML = 
       highScores.map( score => {
         return `<li class="topScore">${score.name} -- ${score.score}</li>` ;
@@ -120,7 +124,9 @@ function showResults() {
       .join("");
 }
 
+//function to build quiz on load
 buildQuiz();
 
+//event listener that displays high scores
 submitButton.addEventListener('click', showResults);
 

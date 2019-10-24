@@ -1,0 +1,64 @@
+
+.st0, .st1, .st2, .st3{fill:#D9E021;}
+
+svg {
+    width: 200px;
+    margin: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.st0 {
+    animation: fill 3s alternate-reverse infinite; 
+}
+
+
+
+.st1 {
+    animation: scale 3s alternate ease-in-out infinite;
+}
+
+
+.st2 {
+    animation: bounce 1s ease-in infinite alternate; 
+}
+
+
+
+.st3 {
+    animation: bounce 1s ease-in infinite alternate, fill 3s alternate-reverse infinite;
+}
+
+@keyframes fill {
+    from{fill:#D9E021;}
+    to{fill: darkmagenta}
+}
+
+@keyframes scale {
+  from {
+      transform: scale(.5);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+    5% {
+        transform: translatey(0px);
+    }
+    20% {
+        transform: translatey(5px);
+    }
+    45% {
+        transform: translatey(0px);
+    }
+    75% {
+        transform: translatey(5px);
+    }
+
+}

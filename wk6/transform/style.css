@@ -1,0 +1,36 @@
+
+.st0, .st1, .st2, .st3{fill:#D9E021;}
+
+svg {
+    width: 200px;
+    margin: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.st0 {
+    transform: translate(20px, 20%);
+}
+
+
+.st1 {
+    transform: skew(20deg, 10deg);
+}
+
+
+.st2 {
+    transform: scale(2);
+}
+
+
+.st3 {
+    transform: scale(.5, .2);
+
+}
+
+/* use the shorthand transition property */
+/* can define four things: property being manipulated (transition property), length of transition (transition-length),
+transition-timing-function, and tranisition delay */

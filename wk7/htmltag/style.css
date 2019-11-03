@@ -1,0 +1,11 @@
+.flex {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+}
+
+canvas, video, audio {
+    padding: 20px;
+}

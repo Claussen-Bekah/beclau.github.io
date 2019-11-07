@@ -54,5 +54,5 @@ function newPic() {
 }
 
 function displayTime() {
-    document.getElementById('time').innerHTML = Date();
+    document.getElementById('time').innerHTML = new Date();
 }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="flex">
+      <button onclick="changeColor()">Click me!</button>
+
+      <input type="text">
+      <input type="submit" value="Submit" id="submit" class="">
+
+      <label for="vegSelect">Select a vegetable
+      <select id="vegSelect" onchange="newPic()">
+          <option value="carrot" id="carrot">Carrots</option>
+          <option value="beet" id="beet">Beets</option>
+          <option value="radish" id="radish">Radishes</option>
+      </select>
+    </label>
+
+      <img src="carrot.jpg" alt="carrots" class="hidden" id="carrotPic">
+      <img src="beet.jpg" alt="carrots" class="hidden" id="beetPic">
+      <img src="radish.jpg" alt="carrots" class="hidden" id="radishPic">
+
+
+      <p id="mouseOver" onmouseover="largeSize()" onmouseout="smallSize()">Mouse over
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat fringilla massa, ut tristique nunc efficitur a. Vestibulum rutrum leo nisi, sed maximus dui eleifend ut. Etiam ac placerat nisl. Suspendisse sed dui ut arcu interdum venenatis id sit amet diam. Nam id lorem euismod, euismod sapien eget, ultrices enim. Integer in dolor neque. Nulla pretium massa vitae lacus efficitur consectetur.
+            Phasellus hendrerit ligula risus, vel eleifend tortor pharetra eget. Curabitur a nibh sodales, pharetra sapien sit amet, aliquet nibh. Phasellus nisi odio, eleifend non sem et, eleifend elementum ipsum. Nunc pellentesque condimentum sapien vitae molestie. Praesent mollis sem sed ipsum dapibus, id pulvinar enim ultricies. Suspendisse egestas tempor metus at eleifend. Duis blandit tellus non augue sollicitudin laoreet. Ut aliquet felis ac consectetur faucibus. Ut non nibh vitae leo dictum venenatis et et est. Duis urna turpis, rhoncus sit amet nunc vitae, dignissim elementum ex. Donec quis facilisis ante. Morbi at sollicitudin magna.
+      </p>
+      <p>The page is loaded. Current Date and Time:</p>
+      <span id="time" onload="displayTime()"></span>
+
+    </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+button {
+    width: 150px;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+input, select {
+    width: 150px;
+}
+
+select {
+    margin-top: 20px;
+}
+
+.bounce {
+    animation: bounce 1s ease-in infinite alternate; 
+}
+
+@keyframes bounce {
+    5% {
+        transform: translatey(0px);
+    }
+    20% {
+        transform: translatey(5px);
+    }
+    45% {
+        transform: translatey(0px);
+    }
+    75% {
+        transform: translatey(5px);
+    }
+
+}

@@ -2,20 +2,30 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>AJAX Quote Call</title>
-        <meta name="description" content="find a quote">
+        <title>Get a quote!</title>
+        <meta name="description" content="find a quote, save to favorites and share">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body onload="canvasRotate()">
+<div class="center">
 
+        <canvas width="300" height="300" id="circles"></canvas>
 
-        <div id="quote">
-                <button onclick="getQuote()" class="" id="button">Get Quote!</button>
+<div class="grid">
+        <div id="quote" class="mainQuote">
+                <button onclick="getQuote()" class="quoteBtn btn" id="button">Get Quote!</button>
         </div>
+
+        <div class="otherBtns">
+        <button onclick="saveQuote()" class="favBtn btn" id="">Save to Favorites</button>
+        <button onclick="newQuote()" class="newBtn btn" id="">New Quote</button>
+    </div>
+    </div>
+</div>
+
        
-        <canvas width="300" height="300" id="stars"></canvas>
         <script src="script.js"></script>
     </body>
 </html>

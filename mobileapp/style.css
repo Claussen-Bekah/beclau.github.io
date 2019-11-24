@@ -1,45 +1,45 @@
 body {
-    width: 100%;
+    width: 95%;
     margin: auto;
+}
+
+.center {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-}
-
-button {
-    width: 150px;
-    font-size: 20px;
-    margin: auto;
-}
-
-button {
-	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
-	background-color:#599bb3;
-	border-radius:8px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Raleway;
-	font-size:20px;
-	font-weight:bold;
-	padding:13px 32px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #3d768a;
-}
-button:hover {
-	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-	background-color:#408c99;
-}
-
-div {
-    width: 400px;
-    display: flex;
-    flex-flow: column nowrap;
     align-content: center;
-    justify-content: center;
-    padding: 20px;
+    height: 450px;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.otherBtns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainQuote {
+    text-align: center;
+}
+
+.btn {
+    background-color: #FFA200;
+    border: none;
+    color: white;
+    height: 70px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
 
 .hidden {
     display: none;
@@ -47,7 +47,7 @@ div {
 
 h1 {
     font-family: "Amatic SC";
-    font-size: 45px;
+    font-size: 35px;
 }
 
 h2 {

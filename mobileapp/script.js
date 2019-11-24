@@ -26,6 +26,31 @@ request.onload = function() {
 request.send();
 }
 
+function canvasRotate() {
+var canvas = document.getElementById("circles");
+var ctx = canvas.getContext("2d");
+
+ctx.beginPath();
+for(var i = 0; i < 12; i++){
+  	var x = 10 + Math.random() * 140;
+    var y = 10 + Math.random() * 140;
+      
+	ctx.beginPath();
+
+  	ctx.arc( x, y, 30, 0, Math.PI * 2, false );
+
+      ctx.fillStyle ="#2B3F84";
+      ctx.fill();
+
+}
+}
+
+// ctx.rotate(Math.random() * 2 * Math.PI);
+// ctx.fillStyle = "rgb(200,0,0)";
+// ctx.fillRect (10, 10, 55, 50);
+
+// ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+// ctx.fillRect (30, 30, 55, 50);
 
 
 

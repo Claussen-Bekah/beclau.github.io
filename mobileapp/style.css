@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 450px;
+    height: 500px;
 }
 
 .grid {
@@ -52,4 +52,12 @@ h1 {
 
 h2 {
     font-family: Raleway;
+}
+
+.otherBtns {
+    padding-top: 30px;
+}
+
+.hideQuote {
+    display: none;
 }

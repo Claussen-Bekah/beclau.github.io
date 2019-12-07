@@ -8,20 +8,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 500px;
+    margin-top: 20px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr .5fr;
     align-items: center;
     background-color: #ffffff;
 }
 
 .otherBtns {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-bottom: 5px;
 }
 
 .mainQuote {
@@ -54,10 +55,12 @@ h2 {
     font-family: Raleway;
 }
 
-.otherBtns {
-    padding-top: 30px;
-}
 
 .hideQuote {
     display: none;
+}
+
+ul {
+ list-style-type: none;
+ margin: none;
 }

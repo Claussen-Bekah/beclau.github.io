@@ -27,19 +27,51 @@ function callAPI() {
     request.send();
 }
 
-function getQuote() {
-
-    document.getElementById('button').classList.toggle('hidden');
-
-    callAPI();
-}
-
 function newQuote() {
 
     let oldQuote = document.getElementById('primaryQuote');
     if (document.getElementById('quote').contains(oldQuote)) {
         oldQuote.remove();
     }
-    
+
     callAPI();
 }
+
+const myQuotes = JSON.parse(localStorage.getItem('myQuotes')) || [];
+
+const viewFavoritesButton = document.getElementById('viewFavorites');
+
+const favList = document.getElementById('favList');
+
+
+function saveQuote() {
+    let faveQuote = document.getElementById('primaryQuote').innerHTML;
+
+    myQuotes.push(faveQuote);
+
+    localStorage.setItem("myQuotes", JSON.stringify(myQuotes));
+  
+}
+
+function viewFavorites() {
+
+    favList.classList.toggle('hidden');
+
+   if(viewFavoritesButton.innerHTML == "View Favorites") {
+       viewFavoritesButton.innerHTML = "Hide Favorites";
+   } else(viewFavoritesButton.innerHTML = "View Favorites");
+
+    favList.innerHTML = 
+    myQuotes.map( faveQuote => {
+      return `<li class="favItem">${faveQuote} <button class="btn" onclick="deleteFavorites()">Remove</button></li>` ;
+    })
+    .join("");
+
+}
+
+// viewFavoritesButton.addEventListener('click', viewFavorites());
+
+function deleteFavorites() {
+    localStorage.removeItem();
+}
+

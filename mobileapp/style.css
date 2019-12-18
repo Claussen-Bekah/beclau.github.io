@@ -21,29 +21,49 @@ body {
 
 .otherBtns {
     display: flex;
-    justify-content: space-between;
+    flex-flow: column nowrap;
+    justify-content: space-around;
     padding-bottom: 5px;
+    margin-bottom: 30px;
 }
 
 .mainQuote {
     text-align: center;
+    animation: fadein 2s ease-in;
 }
 
 .btn {
-    background-color: #FFA200;
     border: none;
     color: white;
     height: 70px;
     padding: 15px 20px;
+    margin-bottom: 10px;
     border-radius: 30px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-  }
+}
 
+.saveBtn,
+.favBtn {
+    background-color: #1697b7;
+}
+
+.newBtn {
+    background-color: #FFA200;
+}
 
 .hidden {
     display: none;
+}
+
+canvas {
+    transform: translate(0, 0);
+    transition: transform 1s ease-in-out;
+}
+
+canvas.move {
+    transform: translate(30px, 0px);
 }
 
 h1 {
@@ -61,6 +81,60 @@ h2 {
 }
 
 ul {
- list-style-type: none;
- margin: none;
+    list-style-type: none;
+    margin: none;
+    padding: 15px;
+}
+
+.animate {
+    animation: bounce .5s ease-in;
+}
+
+.quoteType {
+    font-family: Raleway;
+}
+
+.listBtn {
+    background-color: #30c3cd;
+}
+
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes bounce {
+    5% {
+        transform: translatey(0px);
+    }
+
+    20% {
+        transform: translatey(5px);
+    }
+
+    45% {
+        transform: translatey(0px);
+    }
+
+    75% {
+        transform: translatey(5px);
+    }
+
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
 }

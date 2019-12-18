@@ -1,37 +1,48 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Get a quote!</title>
-        <meta name="description" content="find a quote, save to favorites and share">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body onload="callAPI()">
-<div class="center">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Get a quote!</title>
+    <meta name="description" content="find a quote, save to favorites and share">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="callAPI(); myCanvas()">
+    <canvas id="myCanvas" width="300" height="70"></canvas>
+
+    <div class="center">
 
 
-<div class="grid">
-        <div id="quote" class="mainQuote">
+        <div class="grid">
+
+
+            <div id="quote" class="mainQuote">
+            </div>
+
+            <div class="otherBtns">
+                <button onclick="saveQuote(this.id, 'funny')" class="saveBtn btn">Save Funny Quote</button>
+                <button onclick="saveQuote(this.id, 'inspire')" class="saveBtn btn">Save Inspiring Quote</button>
+
+                <button onclick="viewFavorites()" class="favBtn btn" id="viewFavorites">View Favorites</button>
+
+            </div>
+
+            <button onclick="newQuote(); animateBtn()" class="newBtn btn" id="newBtn">New Quote</button>
+
+
         </div>
 
-        <div class="otherBtns">
-        <button onclick="saveQuote()" class="saveBtn btn" id="">Save to Favorites</button>
-       <button onclick="viewFavorites()" class="favBtn btn" id="viewFavorites">View Favorites</button>
 
+        <ul id="favList" class="hidden class">
+
+        </ul>
     </div>
 
-    <button onclick="newQuote()" class="newBtn btn" id="">New Quote</button>
 
+    <script src="script.js"></script>
+</body>
 
-    </div>
-    <ul id="favList" class="hidden class">
-
-    </ul>
-</div>
-
-       
-        <script src="script.js"></script>
-    </body>
 </html>

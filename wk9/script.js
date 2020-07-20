@@ -2,7 +2,7 @@ function getQuote() {
 
 document.getElementById('button').classList.toggle('hidden');
 
-var request = new XMLHttpRequest();
+const request = new XMLHttpRequest();
 
 request.open("POST", "https://cors-anywhere.herokuapp.com/https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=json&lang=en&jsonp=?", true);
 

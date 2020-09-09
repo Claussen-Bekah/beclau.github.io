@@ -7,15 +7,17 @@ h1 {
 }
 
 a {
-    color:#696969;
     font-family: Quicksand, Arial, Helvetica, sans-serif;
     font-size: 2em;
     font-style: italic;
     text-align: center;
-    text-decoration: none;
 }
 
 a:hover {
+    opacity: .5;
+}
+
+.resume {
     color: #E97F14;
 }
 .logoLink {
@@ -44,17 +46,4 @@ img {
 }
 figure {
     padding: 10px;
-}
-html, body {
-    height: 100%;
-}
-
-html {
-    display: table;
-    margin: auto;
-}
-
-body {
-    display: table-cell;
-    vertical-align: middle;
 }

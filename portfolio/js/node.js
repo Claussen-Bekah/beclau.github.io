@@ -1,6 +1,6 @@
 let fs = require('fs');
 
-let path = '../samples/print-samples';
+let path = '../samples/write-samples';
 
 makeDirArr(path);
 function makeDirArr(dirPath) {

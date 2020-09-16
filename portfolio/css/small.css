@@ -6,6 +6,13 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 100;
+    font-size: 4em;
+}
+
 a {
     font-family: Quicksand, Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -20,6 +27,7 @@ a:hover {
 .resume {
     color: #E97F14;
 }
+
 .logoLink {
     opacity: 1;
     transition: opacity .5s ease-in-out;
@@ -41,9 +49,33 @@ main {
     flex-flow: column nowrap;
 }
 
-img {
+.logoLink {
     border-radius: 50%;
 }
+
 figure {
     padding: 10px;
 }
+
+.container {
+    display: flex;
+    flex-flow: column;
+}
+
+.cell {
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: gainsboro;
+    border-radius: 2%;
+    margin:10px;
+    box-shadow: gainsboro 5px 5px 10px;
+}
+
+.sampleImg {
+    max-height: 200px;
+    max-width: 375px;
+}
+
+
